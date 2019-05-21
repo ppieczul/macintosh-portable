@@ -1,0 +1,307 @@
+EESchema Schematic File Version 4
+LIBS:macintosh-portable-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "Macintosh Portable 12V Generator Circuit"
+Date "2019-05-22"
+Rev "0.1"
+Comp "https://oldcrap.org"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_SwitchedCapacitor:LT1070CT VR1
+U 1 1 5CFABAF3
+P 5200 4200
+F 0 "VR1" H 5400 4800 50  0000 C CNN
+F 1 "LT1070CT" H 5500 4700 50  0000 C CNN
+F 2 "" H 5300 4100 50  0001 C CNN
+F 3 "" H 5300 4100 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+Text HLabel 4850 2900 0    50   Input ~ 0
+VR1-Vin
+Text Notes 4450 2800 0    50   ~ 0
+From Q14,Q15 drain
+$Comp
+L Device:L L7
+U 1 1 5CFAE7CB
+P 5800 3200
+F 0 "L7" V 5990 3200 50  0000 C CNN
+F 1 "?" V 5899 3200 50  0000 C CNN
+F 2 "" H 5800 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US R41
+U 1 1 5CFB11ED
+P 6150 4350
+F 0 "R41" V 5945 4350 50  0000 C CNN
+F 1 "21.5k" V 6036 4350 50  0000 C CNN
+F 2 "" V 6190 4340 50  0001 C CNN
+F 3 "~" H 6150 4350 50  0001 C CNN
+	1    6150 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4350 5850 4350
+Wire Wire Line
+	6300 4350 6400 4350
+$Comp
+L Device:R_US R40
+U 1 1 5CFB294D
+P 5850 4650
+F 0 "R40" H 5782 4604 50  0000 R CNN
+F 1 "2.49k" H 5782 4695 50  0000 R CNN
+F 2 "" V 5890 4640 50  0001 C CNN
+F 3 "~" H 5850 4650 50  0001 C CNN
+	1    5850 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 4500 5850 4350
+Connection ~ 5850 4350
+Wire Wire Line
+	5850 4350 6000 4350
+$Comp
+L Device:D D1
+U 1 1 5CFAFECC
+P 6400 4200
+F 0 "D1" V 6400 4121 50  0000 R CNN
+F 1 "?" V 6355 4121 50  0001 R CNN
+F 2 "" H 6400 4200 50  0001 C CNN
+F 3 "~" H 6400 4200 50  0001 C CNN
+	1    6400 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 4050 6400 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5CFB4D5B
+P 5200 5050
+F 0 "#PWR?" H 5200 4800 50  0001 C CNN
+F 1 "GND" H 5205 4877 50  0000 C CNN
+F 2 "" H 5200 5050 50  0001 C CNN
+F 3 "" H 5200 5050 50  0001 C CNN
+	1    5200 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4800 5850 4950
+$Comp
+L Device:CP1 C6
+U 1 1 5CFB58B7
+P 6400 4650
+F 0 "C6" H 6515 4696 50  0000 L CNN
+F 1 "100uF" H 6515 4605 50  0000 L CNN
+F 2 "" H 6400 4650 50  0001 C CNN
+F 3 "~" H 6400 4650 50  0001 C CNN
+	1    6400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4950 6400 4950
+Wire Wire Line
+	6400 4950 6400 4800
+Connection ~ 5850 4950
+Wire Wire Line
+	6400 4500 6400 4350
+Connection ~ 6400 4350
+$Comp
+L Transistor_FET:IRF9020 Q?
+U 1 1 5CFB719D
+P 7600 4450
+F 0 "Q?" H 7806 4404 50  0000 L CNN
+F 1 "IRF9020" H 7806 4495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 7800 4375 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 7600 4450 50  0001 L CNN
+	1    7600 4450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_US R21
+U 1 1 5CFBA01C
+P 7150 4200
+F 0 "R21" H 7218 4246 50  0000 L CNN
+F 1 "100k" H 7218 4155 50  0000 L CNN
+F 2 "" V 7190 4190 50  0001 C CNN
+F 3 "~" H 7150 4200 50  0001 C CNN
+	1    7150 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4350 7150 4450
+Wire Wire Line
+	7150 4450 7400 4450
+Wire Wire Line
+	7150 4050 7150 4000
+Wire Wire Line
+	7150 4000 6400 4000
+Connection ~ 6400 4000
+Wire Wire Line
+	7150 4000 7700 4000
+Wire Wire Line
+	7700 4000 7700 4250
+Connection ~ 7150 4000
+Text HLabel 8100 4850 2    50   Output ~ 0
+SCSI+12V
+Wire Wire Line
+	8100 4850 7700 4850
+Wire Wire Line
+	7700 4850 7700 4650
+Text HLabel 8100 4000 2    50   Output ~ 0
+FDD+12V
+Wire Wire Line
+	8100 4000 7700 4000
+Connection ~ 7700 4000
+Text Notes 8100 5100 0    50   ~ 0
+To SCSI 34-pin\nconnector
+Text Notes 8100 4250 0    50   ~ 0
+To both FDD\nconnectors
+Wire Wire Line
+	7150 4450 7150 5100
+Connection ~ 7150 4450
+Text Notes 7150 5200 0    50   ~ 0
+?
+Wire Wire Line
+	5200 4700 5200 4950
+Wire Wire Line
+	5200 4950 5850 4950
+$Comp
+L Device:R_US R38
+U 1 1 5CFBEA6D
+P 3900 3400
+F 0 "R38" H 3832 3354 50  0000 R CNN
+F 1 "100k" H 3832 3445 50  0000 R CNN
+F 2 "" V 3940 3390 50  0001 C CNN
+F 3 "~" H 3900 3400 50  0001 C CNN
+	1    3900 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 2900 5200 2900
+$Comp
+L Device:R_US R37
+U 1 1 5CFC1324
+P 3900 3900
+F 0 "R37" H 3832 3854 50  0000 R CNN
+F 1 "75k" H 3832 3945 50  0000 R CNN
+F 2 "" V 3940 3890 50  0001 C CNN
+F 3 "~" H 3900 3900 50  0001 C CNN
+	1    3900 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C4
+U 1 1 5CFC3028
+P 3500 3900
+F 0 "C4" H 3615 3946 50  0000 L CNN
+F 1 "1uF" H 3615 3855 50  0000 L CNN
+F 2 "" H 3500 3900 50  0001 C CNN
+F 3 "~" H 3500 3900 50  0001 C CNN
+	1    3500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_BCE Q3
+U 1 1 5CFC497D
+P 4250 4100
+F 0 "Q3" V 4485 4100 50  0000 C CNN
+F 1 "P2A" V 4576 4100 50  0000 C CNN
+F 2 "" H 4450 4200 50  0001 C CNN
+F 3 "~" H 4250 4100 50  0001 C CNN
+	1    4250 4100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3900 4200 4050 4200
+Wire Wire Line
+	3500 4050 3500 4200
+Wire Wire Line
+	5600 4000 6400 4000
+Wire Wire Line
+	3500 3750 3500 3600
+Wire Wire Line
+	3500 3600 3900 3600
+Wire Wire Line
+	3900 3550 3900 3600
+Connection ~ 3900 3600
+Wire Wire Line
+	3900 3600 3900 3750
+Wire Wire Line
+	4250 3600 4250 3900
+Wire Wire Line
+	3900 3600 4250 3600
+Wire Wire Line
+	3900 4050 3900 4200
+Connection ~ 3900 4200
+Wire Wire Line
+	3900 4200 3500 4200
+Wire Wire Line
+	3900 3250 3900 3200
+Wire Wire Line
+	3900 3200 5200 3200
+Wire Wire Line
+	5200 2900 5200 3200
+Connection ~ 5200 3200
+Wire Wire Line
+	5200 3200 5200 3700
+Wire Wire Line
+	6400 3200 5950 3200
+Wire Wire Line
+	6400 3200 6400 4000
+Wire Wire Line
+	5650 3200 5200 3200
+Wire Wire Line
+	4450 4200 4600 4200
+Wire Wire Line
+	3900 4200 3900 4950
+Wire Wire Line
+	3900 4950 4600 4950
+Connection ~ 5200 4950
+$Comp
+L Device:R_US R39
+U 1 1 5D002B34
+P 4600 4400
+F 0 "R39" H 4532 4354 50  0000 R CNN
+F 1 "1k" H 4532 4445 50  0000 R CNN
+F 2 "" V 4640 4390 50  0001 C CNN
+F 3 "~" H 4600 4400 50  0001 C CNN
+	1    4600 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C5
+U 1 1 5D0034A1
+P 4600 4750
+F 0 "C5" H 4715 4796 50  0000 L CNN
+F 1 "1uF" H 4715 4705 50  0000 L CNN
+F 2 "" H 4600 4750 50  0001 C CNN
+F 3 "~" H 4600 4750 50  0001 C CNN
+	1    4600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4250 4600 4200
+Connection ~ 4600 4200
+Wire Wire Line
+	4600 4200 4800 4200
+Wire Wire Line
+	4600 4550 4600 4600
+Wire Wire Line
+	4600 4900 4600 4950
+Connection ~ 4600 4950
+Wire Wire Line
+	4600 4950 5200 4950
+Wire Wire Line
+	5200 4950 5200 5050
+$EndSCHEMATC
