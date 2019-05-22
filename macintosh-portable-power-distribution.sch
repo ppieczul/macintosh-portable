@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 2 3
 Title "Macintosh Portable Power Distribution"
 Date "2019-05-22"
-Rev "0.1"
+Rev "0.11"
 Comp "https://oldcrap.org"
 Comment1 ""
 Comment2 ""
@@ -433,7 +433,7 @@ Wire Notes Line
 Wire Notes Line
 	5750 4650 5750 6100
 Wire Wire Line
-	6200 3600 6200 4850
+	6200 3600 6200 4200
 $Comp
 L Device:Battery BT1
 U 1 1 5CF6715E
@@ -583,4 +583,20 @@ Wire Wire Line
 	4150 2100 4400 2100
 Text Notes 900  7450 0    50   ~ 0
 V1M - voltage control module, location 1-4M\nPMGR - power management chip, location H15
+Text HLabel 7250 4200 2    50   Output ~ 0
+RAM-TTL
+Wire Wire Line
+	7250 4200 6200 4200
+Connection ~ 6200 4200
+Wire Wire Line
+	6200 4200 6200 4850
+Text Notes 7150 4450 0    50   ~ 0
+To RAM, RAM slot\nand logic chips
+Text HLabel 5450 6500 0    50   Input ~ 0
+PMGR-37
+Wire Wire Line
+	5450 6500 5900 6500
+Wire Wire Line
+	5900 6500 5900 5950
+Connection ~ 5900 5950
 $EndSCHEMATC
