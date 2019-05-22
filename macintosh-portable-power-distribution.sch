@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "Macintosh Portable Power Distribution"
 Date "2019-05-22"
 Rev "0.11"
@@ -109,21 +109,21 @@ Wire Wire Line
 $Comp
 L Device:R_US R160
 U 1 1 5CE60BCC
-P 2700 5700
-F 0 "R160" V 2495 5700 50  0000 C CNN
-F 1 "75k" V 2586 5700 50  0000 C CNN
-F 2 "" V 2740 5690 50  0001 C CNN
-F 3 "~" H 2700 5700 50  0001 C CNN
-	1    2700 5700
+P 2850 5700
+F 0 "R160" V 2645 5700 50  0000 C CNN
+F 1 "75k" V 2736 5700 50  0000 C CNN
+F 2 "" V 2890 5690 50  0001 C CNN
+F 3 "~" H 2850 5700 50  0001 C CNN
+	1    2850 5700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2850 5700 3200 5700
+	3000 5700 3200 5700
 Connection ~ 3200 5700
 Text HLabel 2400 5700 0    50   Input ~ 0
 V1M-51
 Wire Wire Line
-	2550 5700 2400 5700
+	2700 5700 2550 5700
 Wire Wire Line
 	3200 6000 3200 6050
 $Comp
@@ -240,7 +240,7 @@ Wire Notes Line
 	4650 6500 1850 6500
 Wire Notes Line
 	1850 6500 1850 4650
-Text Notes 1950 6400 0    50   ~ 0
+Text Notes 3650 6400 0    50   ~ 0
 SCSI power enable logic
 Text Notes 4900 4200 0    50   ~ 0
 To SCSI 34-pin\nconnector
@@ -599,4 +599,64 @@ Wire Wire Line
 Wire Wire Line
 	5900 6500 5900 5950
 Connection ~ 5900 5950
+Text HLabel 2400 7050 0    50   Input ~ 0
+V1M-52
+$Comp
+L Device:CP1 C26
+U 1 1 5CEA6F81
+P 2550 6050
+F 0 "C26" H 2665 6096 50  0000 L CNN
+F 1 "47uF" H 2665 6005 50  0000 L CNN
+F 2 "" H 2550 6050 50  0001 C CNN
+F 3 "~" H 2550 6050 50  0001 C CNN
+	1    2550 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5900 2550 5700
+Connection ~ 2550 5700
+Wire Wire Line
+	2550 5700 2400 5700
+$Comp
+L Device:CP1 C?
+U 1 1 5CEB228F
+P 2550 6750
+F 0 "C?" H 2435 6704 50  0000 R CNN
+F 1 "47uF" H 2435 6795 50  0000 R CNN
+F 2 "" H 2550 6750 50  0001 C CNN
+F 3 "~" H 2550 6750 50  0001 C CNN
+	1    2550 6750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 7050 2400 7050
+Wire Wire Line
+	2550 6900 2550 7050
+Wire Wire Line
+	2550 6600 2550 6200
+Text HLabel 9550 1400 2    50   Output ~ 0
+V1M-39
+Text HLabel 9550 1950 2    50   Output ~ 0
+V1M-41
+$Comp
+L Device:CP1 C16
+U 1 1 5CF544A6
+P 9150 1700
+F 0 "C16" H 9265 1746 50  0000 L CNN
+F 1 "100uF" H 9265 1655 50  0000 L CNN
+F 2 "" H 9150 1700 50  0001 C CNN
+F 3 "~" H 9150 1700 50  0001 C CNN
+	1    9150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1550 9150 1400
+Wire Wire Line
+	9150 1400 9550 1400
+Wire Wire Line
+	9150 1850 9150 1950
+Wire Wire Line
+	9150 1950 9550 1950
+NoConn ~ 3950 5900
+NoConn ~ 4050 5900
 $EndSCHEMATC
