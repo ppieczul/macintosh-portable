@@ -6,10 +6,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title "Macintosh Portable 12V Generator Circuit"
-Date "2019-05-22"
-Rev "0.1"
+Date "2019-05-27"
+Rev "0.12"
 Comp "https://oldcrap.org"
-Comment1 ""
+Comment1 "Author: Pawel Pieczul"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -117,10 +117,10 @@ Wire Wire Line
 	6400 4500 6400 4350
 Connection ~ 6400 4350
 $Comp
-L Transistor_FET:IRF9020 Q?
+L Transistor_FET:IRF9020 Q21
 U 1 1 5CFB719D
 P 7600 4450
-F 0 "Q?" H 7806 4404 50  0000 L CNN
+F 0 "Q21" H 7806 4404 50  0000 L CNN
 F 1 "IRF9020" H 7806 4495 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 7800 4375 50  0001 L CIN
 F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 7600 4450 50  0001 L CNN

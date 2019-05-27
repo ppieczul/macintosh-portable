@@ -6,525 +6,308 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title "Macintosh Portable V1M Module"
-Date "2019-05-22"
-Rev "0.1"
+Date "2019-05-27"
+Rev "0.12"
 Comp "https://oldcrap.org"
-Comment1 ""
+Comment1 "Author: Pawel Pieczul"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7600 3350 2    50   Output ~ 0
+Text HLabel 8450 4000 2    50   Output ~ 0
 V1M-22
-$Comp
-L Comparator:LTC1040CN UC1
-U 2 1 5CE7EB23
-P 4200 6150
-F 0 "UC1" H 4400 6550 50  0000 C CNN
-F 1 "LTC1040CN" H 4500 6450 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 4450 6150 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1040fa.pdf" H 4200 6150 50  0001 C CNN
-	2    4200 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 6150 5400 6150
-$Comp
-L power:GND #PWR?
-U 1 1 5CE86BB9
-P 3750 6450
-F 0 "#PWR?" H 3750 6200 50  0001 C CNN
-F 1 "GND" H 3755 6277 50  0000 C CNN
-F 2 "" H 3750 6450 50  0001 C CNN
-F 3 "" H 3750 6450 50  0001 C CNN
-	1    3750 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 6450 3750 6400
-Wire Wire Line
-	3750 6400 3850 6400
-Wire Wire Line
-	3750 6400 3750 6250
-Wire Wire Line
-	3750 6250 3850 6250
-Connection ~ 3750 6400
-Text HLabel 1500 6050 0    50   Input ~ 0
-V1M-16
-Wire Wire Line
-	1500 6050 1850 6050
-$Comp
-L Device:C CC3
-U 1 1 5CE88D36
-P 1850 6250
-F 0 "CC3" H 1965 6250 50  0000 L CNN
-F 1 "C" H 1965 6205 50  0001 L CNN
-F 2 "" H 1888 6100 50  0001 C CNN
-F 3 "~" H 1850 6250 50  0001 C CNN
-	1    1850 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 6100 1850 6050
-$Comp
-L power:GND #PWR?
-U 1 1 5CE89E58
-P 1850 6400
-F 0 "#PWR?" H 1850 6150 50  0001 C CNN
-F 1 "GND" H 1855 6227 50  0000 C CNN
-F 2 "" H 1850 6400 50  0001 C CNN
-F 3 "" H 1850 6400 50  0001 C CNN
-	1    1850 6400
-	1    0    0    -1  
-$EndComp
-Connection ~ 1850 6050
-$Comp
-L Device:C CC4
-U 1 1 5CE8D38E
-P 3700 5900
-F 0 "CC4" V 3540 5900 50  0000 C CNN
-F 1 "C" H 3815 5855 50  0001 L CNN
-F 2 "" H 3738 5750 50  0001 C CNN
-F 3 "~" H 3700 5900 50  0001 C CNN
-	1    3700 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CE8E863
-P 3550 5900
-F 0 "#PWR?" H 3550 5650 50  0001 C CNN
-F 1 "GND" V 3555 5772 50  0000 R CNN
-F 2 "" H 3550 5900 50  0001 C CNN
-F 3 "" H 3550 5900 50  0001 C CNN
-	1    3550 5900
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CE92DF7
-P 4050 5050
-F 0 "#PWR?" H 4050 4800 50  0001 C CNN
-F 1 "GND" H 4055 4877 50  0000 C CNN
-F 2 "" H 4050 5050 50  0001 C CNN
-F 3 "" H 4050 5050 50  0001 C CNN
-	1    4050 5050
+P 4750 5100
+F 0 "#PWR?" H 4750 4850 50  0001 C CNN
+F 1 "GND" H 4755 4927 50  0000 C CNN
+F 2 "" H 4750 5100 50  0001 C CNN
+F 3 "" H 4750 5100 50  0001 C CNN
+	1    4750 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 6050 3850 6050
 $Comp
 L Comparator:LTC1040CN UC1
 U 3 1 5CEDE431
-P 6100 6750
-F 0 "UC1" V 6150 7000 50  0000 C CNN
-F 1 "LTC1040CN" V 6250 6900 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 6350 6750 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1040fa.pdf" H 6100 6750 50  0001 C CNN
-	3    6100 6750
+P 6100 6850
+F 0 "UC1" V 6150 7100 50  0000 C CNN
+F 1 "LTC1040CN" V 6250 7000 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 6350 6850 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1040fa.pdf" H 6100 6850 50  0001 C CNN
+	3    6100 6850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CEE1325
-P 5600 7250
-F 0 "#PWR?" H 5600 7000 50  0001 C CNN
-F 1 "GND" H 5605 7077 50  0000 C CNN
-F 2 "" H 5600 7250 50  0001 C CNN
-F 3 "" H 5600 7250 50  0001 C CNN
-	1    5600 7250
+P 5600 7350
+F 0 "#PWR?" H 5600 7100 50  0001 C CNN
+F 1 "GND" H 5605 7177 50  0000 C CNN
+F 2 "" H 5600 7350 50  0001 C CNN
+F 3 "" H 5600 7350 50  0001 C CNN
+	1    5600 7350
 	1    0    0    -1  
 $EndComp
-Text HLabel 1500 6850 0    50   Input ~ 0
+Text HLabel 1500 6950 0    50   Input ~ 0
 V1M-17
-Wire Wire Line
-	1500 6850 5700 6850
 $Comp
-L Device:C CC5
+L Device:C CC6
 U 1 1 5CEECEF1
-P 4900 7250
-F 0 "CC5" H 5015 7250 50  0000 L CNN
-F 1 "C" H 5015 7205 50  0001 L CNN
-F 2 "" H 4938 7100 50  0001 C CNN
-F 3 "~" H 4900 7250 50  0001 C CNN
-	1    4900 7250
+P 4900 7350
+F 0 "CC6" H 5015 7350 50  0000 L CNN
+F 1 "C" H 5015 7305 50  0001 L CNN
+F 2 "" H 4938 7200 50  0001 C CNN
+F 3 "~" H 4900 7350 50  0001 C CNN
+	1    4900 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CEED70D
-P 4900 7400
-F 0 "#PWR?" H 4900 7150 50  0001 C CNN
-F 1 "GND" H 4905 7227 50  0000 C CNN
-F 2 "" H 4900 7400 50  0001 C CNN
-F 3 "" H 4900 7400 50  0001 C CNN
-	1    4900 7400
+P 4900 7500
+F 0 "#PWR?" H 4900 7250 50  0001 C CNN
+F 1 "GND" H 4905 7327 50  0000 C CNN
+F 2 "" H 4900 7500 50  0001 C CNN
+F 3 "" H 4900 7500 50  0001 C CNN
+	1    4900 7500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 7100 4900 7000
+	4900 7200 4900 7100
 Wire Wire Line
-	4900 7000 5700 7000
+	4900 7100 5700 7100
 Wire Wire Line
-	5600 7250 5600 7150
+	5600 7350 5600 7250
 Wire Wire Line
-	5600 7150 5700 7150
+	5600 7250 5700 7250
 $Comp
 L Transistor_FET:IRF9020 QC1
 U 1 1 5CEF3E9C
-P 4150 4850
-F 0 "QC1" H 4356 4896 50  0000 L CNN
-F 1 "702" H 4356 4805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 4350 4775 50  0001 L CIN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 4150 4850 50  0001 L CNN
-	1    4150 4850
+P 4850 4900
+F 0 "QC1" H 5056 4946 50  0000 L CNN
+F 1 "702" H 5056 4855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 5050 4825 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 4850 4900 50  0001 L CNN
+	1    4850 4900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CF20205
-P 8250 5650
-F 0 "#PWR?" H 8250 5400 50  0001 C CNN
-F 1 "GND" H 8255 5477 50  0000 C CNN
-F 2 "" H 8250 5650 50  0001 C CNN
-F 3 "" H 8250 5650 50  0001 C CNN
-	1    8250 5650
+P 5950 5900
+F 0 "#PWR?" H 5950 5650 50  0001 C CNN
+F 1 "GND" H 5955 5727 50  0000 C CNN
+F 2 "" H 5950 5900 50  0001 C CNN
+F 3 "" H 5950 5900 50  0001 C CNN
+	1    5950 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C CC6
+L Device:C CC8
 U 1 1 5CF1F5DF
-P 8250 5500
-F 0 "CC6" H 8365 5546 50  0000 L CNN
-F 1 "4.7uF" H 8365 5455 50  0000 L CNN
-F 2 "" H 8288 5350 50  0001 C CNN
-F 3 "~" H 8250 5500 50  0001 C CNN
-	1    8250 5500
-	1    0    0    -1  
+P 5950 5750
+F 0 "CC8" H 6065 5796 50  0000 L CNN
+F 1 "4.7uF" H 6065 5705 50  0000 L CNN
+F 2 "" H 5988 5600 50  0001 C CNN
+F 3 "~" H 5950 5750 50  0001 C CNN
+	1    5950 5750
+	-1   0    0    1   
 $EndComp
-$Comp
-L Transistor_FET:IRF9020 QC7
-U 1 1 5CF1AA8E
-P 3650 5250
-F 0 "QC7" V 3901 5250 50  0000 C CNN
-F 1 "IRF9020" V 3992 5250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3850 5175 50  0001 L CIN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 3650 5250 50  0001 L CNN
-	1    3650 5250
-	0    1    1    0   
-$EndComp
-Text HLabel 1500 4800 0    50   Input ~ 0
+Text HLabel 1500 4650 0    50   Input ~ 0
 V1M-40
 $Comp
 L Transistor_FET:IRF9020 QC5
 U 1 1 5CF00785
-P 4550 3550
-F 0 "QC5" V 4550 3750 50  0000 C CNN
-F 1 "702" V 4450 3750 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 4750 3475 50  0001 L CIN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 4550 3550 50  0001 L CNN
-	1    4550 3550
-	0    1    -1   0   
-$EndComp
-Text HLabel 10550 5550 2    50   Input ~ 0
-V1M-29
-Text HLabel 10550 5950 2    50   Input ~ 0
-V1M-31
-Text Notes 10050 5800 0    50   ~ 0
-100uF\nC16
-$Comp
-L Device:C CC?
-U 1 1 5CF5A4F0
-P 8700 5750
-F 0 "CC?" H 8815 5796 50  0000 L CNN
-F 1 "4.7uF" H 8815 5705 50  0000 L CNN
-F 2 "" H 8738 5600 50  0001 C CNN
-F 3 "~" H 8700 5750 50  0001 C CNN
-	1    8700 5750
+P 3150 3650
+F 0 "QC5" V 3150 3850 50  0000 C CNN
+F 1 "702" V 3050 3850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3350 3575 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 3150 3650 50  0001 L CNN
+	1    3150 3650
 	1    0    0    -1  
 $EndComp
-Text HLabel 10550 5350 2    50   Output ~ 0
+Text HLabel 9750 5550 2    50   Input ~ 0
+V1M-29
+Text HLabel 9750 5950 2    50   Input ~ 0
+V1M-31
+Text Notes 9750 5800 0    50   ~ 0
+100uF\nC16
+$Comp
+L Device:C CC7
+U 1 1 5CF5A4F0
+P 7600 5950
+F 0 "CC7" V 7750 5900 50  0000 L CNN
+F 1 "C" H 7715 5905 50  0001 L CNN
+F 2 "" H 7638 5800 50  0001 C CNN
+F 3 "~" H 7600 5950 50  0001 C CNN
+	1    7600 5950
+	1    0    0    -1  
+$EndComp
+Text HLabel 9750 5350 2    50   Output ~ 0
 V1M-33
-NoConn ~ 6500 7000
-NoConn ~ 6500 7150
-NoConn ~ 6500 7300
+NoConn ~ 6500 7100
+NoConn ~ 6500 7250
+NoConn ~ 6500 7400
 $Comp
 L power:GND #PWR?
 U 1 1 5CF6E1DB
-P 6700 6900
-F 0 "#PWR?" H 6700 6650 50  0001 C CNN
-F 1 "GND" H 6705 6727 50  0000 C CNN
-F 2 "" H 6700 6900 50  0001 C CNN
-F 3 "" H 6700 6900 50  0001 C CNN
-	1    6700 6900
+P 6700 7000
+F 0 "#PWR?" H 6700 6750 50  0001 C CNN
+F 1 "GND" H 6705 6827 50  0000 C CNN
+F 2 "" H 6700 7000 50  0001 C CNN
+F 3 "" H 6700 7000 50  0001 C CNN
+	1    6700 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 6900 6700 6850
+	6700 7000 6700 6950
 Wire Wire Line
-	6700 6850 6500 6850
+	6700 6950 6500 6950
 Text HLabel 1500 5350 0    50   Input ~ 0
 V1M-25
-Text HLabel 1500 5000 0    50   Input ~ 0
+Text HLabel 1500 4450 0    50   Input ~ 0
 V1M-37
 $Comp
 L Amplifier_Operational:OP20 OP1
 U 1 1 5CE65425
 P 6800 1100
-F 0 "OP1" H 7144 1054 50  0000 L CNN
-F 1 "OP20" H 7144 1145 50  0000 L CNN
+F 0 "OP1" H 6900 1250 50  0000 L CNN
+F 1 "OP20" H 6900 1350 50  0000 L CNN
 F 2 "" H 6850 1150 50  0001 C CNN
 F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/129512/AD/OP20HJ.html" H 6850 1250 50  0001 C CNN
 	1    6800 1100
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 1400 6700 1800
-Wire Wire Line
-	6500 800  6700 800 
-Connection ~ 6700 800 
-Wire Wire Line
-	6700 800  6700 750 
 $Comp
 L power:GND #PWR?
 U 1 1 5CE7C7B4
-P 6700 750
-F 0 "#PWR?" H 6700 500 50  0001 C CNN
-F 1 "GND" H 6705 577 50  0000 C CNN
-F 2 "" H 6700 750 50  0001 C CNN
-F 3 "" H 6700 750 50  0001 C CNN
-	1    6700 750 
-	-1   0    0    1   
+P 6700 1400
+F 0 "#PWR?" H 6700 1150 50  0001 C CNN
+F 1 "GND" H 6705 1227 50  0000 C CNN
+F 2 "" H 6700 1400 50  0001 C CNN
+F 3 "" H 6700 1400 50  0001 C CNN
+	1    6700 1400
+	1    0    0    -1  
 $EndComp
+Connection ~ 6350 3000
 Wire Wire Line
-	2650 3050 2650 3150
-Connection ~ 2650 3050
-Wire Wire Line
-	2200 3050 2650 3050
-Wire Wire Line
-	2200 2650 2650 2650
-Wire Wire Line
-	2650 2700 2650 2650
-Connection ~ 2650 2650
-Wire Wire Line
-	2650 2650 4050 2650
-Wire Wire Line
-	6700 1800 6700 2050
+	5900 3000 6350 3000
 Connection ~ 6700 1800
 Connection ~ 2650 1550
 Wire Wire Line
-	2650 3000 2650 3050
-Wire Wire Line
-	2200 3050 2200 2950
-Wire Wire Line
-	4900 3250 5200 3250
+	5900 3000 5900 2950
 Connection ~ 4050 2650
 Wire Wire Line
-	4050 3250 4050 2650
-Wire Wire Line
-	4600 3250 4050 3250
-$Comp
-L power:GND #PWR?
-U 1 1 5CE7C1FC
-P 6700 2850
-F 0 "#PWR?" H 6700 2600 50  0001 C CNN
-F 1 "GND" H 6705 2677 50  0000 C CNN
-F 2 "" H 6700 2850 50  0001 C CNN
-F 3 "" H 6700 2850 50  0001 C CNN
-	1    6700 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CE7B386
-P 5400 3050
-F 0 "#PWR?" H 5400 2800 50  0001 C CNN
-F 1 "GND" H 5405 2877 50  0000 C CNN
-F 2 "" H 5400 3050 50  0001 C CNN
-F 3 "" H 5400 3050 50  0001 C CNN
-	1    5400 3050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4050 2650 6500 2650
-Wire Wire Line
 	4050 1700 4050 2650
-Connection ~ 2200 2650
-Wire Wire Line
-	1500 2650 2200 2650
 $Comp
 L power:GND #PWR?
 U 1 1 5CE7631D
-P 2650 3150
-F 0 "#PWR?" H 2650 2900 50  0001 C CNN
-F 1 "GND" H 2655 2977 50  0000 C CNN
-F 2 "" H 2650 3150 50  0001 C CNN
-F 3 "" H 2650 3150 50  0001 C CNN
-	1    2650 3150
+P 6350 3050
+F 0 "#PWR?" H 6350 2800 50  0001 C CNN
+F 1 "GND" H 6355 2877 50  0000 C CNN
+F 2 "" H 6350 3050 50  0001 C CNN
+F 3 "" H 6350 3050 50  0001 C CNN
+	1    6350 3050
 	1    0    0    -1  
 $EndComp
-Text HLabel 1500 2650 0    50   Input ~ 0
+Text HLabel 8500 2250 2    50   Output ~ 0
 V1M-51
-$Comp
-L Reference_Voltage:LM385D-1.2 DC1
-U 1 1 5CE6CF4E
-P 2200 2800
-F 0 "DC1" V 2246 2713 50  0000 R CNN
-F 1 "0412" V 2155 2713 50  0000 R CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2200 2600 50  0001 C CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/LM285-D.PDF" H 2200 2800 50  0001 C CIN
-	1    2200 2800
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Amplifier_Operational:OP20 OP2
 U 1 1 5CE5EDC3
-P 6800 2550
-F 0 "OP2" H 7144 2596 50  0000 L CNN
-F 1 "OP20" H 7144 2505 50  0000 L CNN
-F 2 "" H 6850 2600 50  0001 C CNN
-F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/129512/AD/OP20HJ.html" H 6850 2700 50  0001 C CNN
-	1    6800 2550
-	1    0    0    -1  
+P 7300 2750
+F 0 "OP2" H 7350 3000 50  0000 L CNN
+F 1 "OP20" H 7350 2900 50  0000 L CNN
+F 2 "" H 7350 2800 50  0001 C CNN
+F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/129512/AD/OP20HJ.html" H 7350 2900 50  0001 C CNN
+	1    7300 2750
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:OP20 OP3
 U 1 1 5CE5AA98
 P 5500 3350
-F 0 "OP3" H 5844 3304 50  0000 L CNN
-F 1 "OP20" H 5844 3395 50  0000 L CNN
+F 0 "OP3" H 5550 3500 50  0000 L CNN
+F 1 "OP20" H 5550 3600 50  0000 L CNN
 F 2 "" H 5550 3400 50  0001 C CNN
 F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/129512/AD/OP20HJ.html" H 5550 3500 50  0001 C CNN
 	1    5500 3350
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_US RC1
+L Device:R_US RC14
 U 1 1 5CE59E18
-P 4750 3250
-F 0 "RC1" V 4545 3250 50  0000 C CNN
-F 1 "3.8k" V 4636 3250 50  0000 C CNN
-F 2 "" V 4790 3240 50  0001 C CNN
-F 3 "~" H 4750 3250 50  0001 C CNN
-	1    4750 3250
-	0    1    1    0   
+P 4050 2900
+F 0 "RC14" V 3845 2900 50  0000 C CNN
+F 1 "4.2k" V 3936 2900 50  0000 C CNN
+F 2 "" V 4090 2890 50  0001 C CNN
+F 3 "~" H 4050 2900 50  0001 C CNN
+	1    4050 2900
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C CC2
+L Device:C CC1
 U 1 1 5CE594A8
-P 2650 2850
-F 0 "CC2" H 2765 2850 50  0000 L CNN
-F 1 "C" H 2765 2805 50  0001 L CNN
-F 2 "" H 2688 2700 50  0001 C CNN
-F 3 "~" H 2650 2850 50  0001 C CNN
-	1    2650 2850
+P 6350 2850
+F 0 "CC1" H 6465 2850 50  0000 L CNN
+F 1 "C" H 6465 2805 50  0001 L CNN
+F 2 "" H 6388 2700 50  0001 C CNN
+F 3 "~" H 6350 2850 50  0001 C CNN
+	1    6350 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5150 2050 5150 1900
 Connection ~ 5150 2050
 Wire Wire Line
-	5150 2200 5150 2050
+	5150 2150 5150 2050
 $Comp
 L power:GND #PWR?
 U 1 1 5CE58BE1
-P 5150 2200
-F 0 "#PWR?" H 5150 1950 50  0001 C CNN
-F 1 "GND" H 5155 2027 50  0000 C CNN
-F 2 "" H 5150 2200 50  0001 C CNN
-F 3 "" H 5150 2200 50  0001 C CNN
-	1    5150 2200
+P 5150 2150
+F 0 "#PWR?" H 5150 1900 50  0001 C CNN
+F 1 "GND" H 5155 1977 50  0000 C CNN
+F 2 "" H 5150 2150 50  0001 C CNN
+F 3 "" H 5150 2150 50  0001 C CNN
+	1    5150 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 1550 1500 1550
+	5800 3350 6350 3350
 Wire Wire Line
-	2650 1800 2650 1550
-$Comp
-L power:GND #PWR?
-U 1 1 5CE5775B
-P 2650 2100
-F 0 "#PWR?" H 2650 1850 50  0001 C CNN
-F 1 "GND" H 2655 1927 50  0000 C CNN
-F 2 "" H 2650 2100 50  0001 C CNN
-F 3 "" H 2650 2100 50  0001 C CNN
-	1    2650 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C CC1
-U 1 1 5CE56DA0
-P 2650 1950
-F 0 "CC1" H 2765 1950 50  0000 L CNN
-F 1 "C" H 2765 1905 50  0001 L CNN
-F 2 "" H 2688 1800 50  0001 C CNN
-F 3 "~" H 2650 1950 50  0001 C CNN
-	1    2650 1950
-	1    0    0    -1  
-$EndComp
-Text HLabel 1500 1550 0    50   Input ~ 0
-V1M-52
-Wire Wire Line
-	4750 3450 5200 3450
-Wire Wire Line
-	5800 3350 6800 3350
-Connection ~ 6800 3350
-Wire Wire Line
-	6800 3350 7600 3350
-Wire Wire Line
-	1500 5000 3100 5000
-Wire Wire Line
-	1500 5350 3450 5350
-Wire Wire Line
-	4050 3450 4350 3450
+	1500 5350 2200 5350
 $Comp
 L power:GND #PWR?
 U 1 1 5D1F42CD
-P 9600 6150
-F 0 "#PWR?" H 9600 5900 50  0001 C CNN
-F 1 "GND" H 9605 5977 50  0000 C CNN
-F 2 "" H 9600 6150 50  0001 C CNN
-F 3 "" H 9600 6150 50  0001 C CNN
-	1    9600 6150
+P 8800 6150
+F 0 "#PWR?" H 8800 5900 50  0001 C CNN
+F 1 "GND" H 8805 5977 50  0000 C CNN
+F 2 "" H 8800 6150 50  0001 C CNN
+F 3 "" H 8800 6150 50  0001 C CNN
+	1    8800 6150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9200 5850
-NoConn ~ 9200 5650
-$Comp
-L Regulator_SwitchedCapacitor:LT1054 UC?
-U 1 1 5D1F42AA
-P 9600 5650
-F 0 "UC?" H 9600 6217 50  0000 C CNN
-F 1 "LT1054" H 9600 6126 50  0000 C CNN
-F 2 "" H 9700 5550 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1054lfh.pdf" H 9700 5550 50  0001 C CNN
-	1    9600 5650
-	1    0    0    -1  
-$EndComp
+NoConn ~ 8400 5650
 Wire Wire Line
-	3850 5350 8250 5350
-Connection ~ 8250 5350
+	7600 5800 7600 5450
 Wire Wire Line
-	8250 5350 9200 5350
+	7600 5450 8050 5450
 Wire Wire Line
-	8700 5600 8700 5450
+	7600 6100 7600 6450
 Wire Wire Line
-	8700 5450 9200 5450
+	7600 6450 9500 6450
 Wire Wire Line
-	8700 5900 8700 6450
+	9500 6450 9500 5350
 Wire Wire Line
-	8700 6450 10300 6450
+	9500 5350 9200 5350
 Wire Wire Line
-	10300 6450 10300 5350
+	9500 5350 9750 5350
+Connection ~ 9500 5350
 Wire Wire Line
-	10300 5350 10000 5350
+	9750 5550 9200 5550
 Wire Wire Line
-	10300 5350 10550 5350
-Connection ~ 10300 5350
-Wire Wire Line
-	10550 5550 10000 5550
-Wire Wire Line
-	10550 5950 10000 5950
+	9750 5950 9200 5950
 Wire Wire Line
 	5150 2050 5200 2050
 Wire Wire Line
@@ -532,222 +315,937 @@ Wire Wire Line
 Wire Wire Line
 	4050 1700 5200 1700
 Wire Wire Line
-	2650 1550 5200 1550
+	2650 1550 5150 1550
 $Comp
 L Comparator:LTC1040CN UC1
 U 1 1 5CE55934
 P 5550 1800
-F 0 "UC1" H 5850 2200 50  0000 C CNN
-F 1 "LTC1040CN" H 5950 2100 50  0000 C CNN
+F 0 "UC1" H 5650 1450 50  0000 C CNN
+F 1 "LTC1040CN" H 5750 1350 50  0000 C CNN
 F 2 "Package_DIP:DIP-18_W7.62mm" H 5800 1800 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1040fa.pdf" H 5550 1800 50  0001 C CNN
 	1    5550 1800
 	1    0    0    -1  
 $EndComp
-Text HLabel 7600 1100 2    50   Output ~ 0
+Text HLabel 8500 1100 2    50   Output ~ 0
 V1M-62
 Wire Wire Line
-	7100 1100 7600 1100
-Text HLabel 7600 2550 2    50   Output ~ 0
+	7100 1100 7700 1100
+Text HLabel 8500 2750 2    50   Output ~ 0
 V1M-8
 Wire Wire Line
-	7600 2550 7100 2550
+	8500 2750 8000 2750
 Wire Wire Line
-	6700 1800 8850 1800
+	6700 1800 9900 1800
 Wire Wire Line
 	6100 1800 6700 1800
-NoConn ~ 6800 2850
-NoConn ~ 6900 2850
+NoConn ~ 7300 2450
+NoConn ~ 7400 2450
 NoConn ~ 5500 3050
 NoConn ~ 5600 3050
-Wire Wire Line
-	6500 800  6500 1000
-Text HLabel 1500 1200 0    50   Input ~ 0
+Text HLabel 1500 1000 0    50   Input ~ 0
 V1M-4
 Wire Wire Line
-	6500 1200 1500 1200
-NoConn ~ 6300 2450
+	9900 1800 9900 3050
 Wire Wire Line
-	6300 2450 6500 2450
-$Comp
-L Device:D DC2
-U 1 1 5D362828
-P 8850 5000
-F 0 "DC2" V 8850 5079 50  0000 L CNN
-F 1 "D" V 8895 5079 50  0001 L CNN
-F 2 "" H 8850 5000 50  0001 C CNN
-F 3 "~" H 8850 5000 50  0001 C CNN
-	1    8850 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8850 1800 8850 4850
-Wire Wire Line
-	4350 4850 8850 4850
-Connection ~ 8850 4850
-NoConn ~ 8850 5150
-Wire Wire Line
-	1500 3750 4550 3750
-Text HLabel 1500 3750 0    50   Input ~ 0
+	5050 4900 9900 4900
+Text HLabel 1500 3650 0    50   Input ~ 0
 V1M-39
-Connection ~ 4550 3750
-$Comp
-L Transistor_FET:IRF9020 QC4
-U 1 1 5CF08979
-P 4550 3950
-F 0 "QC4" V 4550 4150 50  0000 C CNN
-F 1 "702" V 4450 4150 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 4750 3875 50  0001 L CIN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 4550 3950 50  0001 L CNN
-	1    4550 3950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	4350 4050 4050 4050
-Connection ~ 4050 4050
-Wire Wire Line
-	4050 3450 4050 4050
-Wire Wire Line
-	4050 4650 4050 4050
-Connection ~ 2800 4050
-Wire Wire Line
-	2800 4050 4050 4050
-Connection ~ 1700 4050
-Wire Wire Line
-	1700 4050 2800 4050
-Text HLabel 1500 4050 0    50   Input ~ 0
+	4750 4700 4750 4200
+Text HLabel 1500 4200 0    50   Input ~ 0
 V1M-38
-Wire Wire Line
-	1500 4050 1700 4050
-$Comp
-L Transistor_FET:IRF9020 QC3
-U 1 1 5CF09852
-P 1900 4550
-F 0 "QC3" V 2243 4550 50  0000 C CNN
-F 1 "702" V 2152 4550 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 2100 4475 50  0001 L CIN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 1900 4550 50  0001 L CNN
-	1    1900 4550
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	1700 4450 1700 4050
-Wire Wire Line
-	1500 4800 1900 4800
-Wire Wire Line
-	1900 4800 1900 4750
-Text HLabel 2300 4450 2    50   Output ~ 0
-V1M-41
-Wire Wire Line
-	2300 4450 2100 4450
-$Comp
-L Transistor_FET:IRF9020 QC6
-U 1 1 5CF09F38
-P 3100 4550
-F 0 "QC6" V 3443 4550 50  0000 C CNN
-F 1 "702" V 3352 4550 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3300 4475 50  0001 L CIN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 3100 4550 50  0001 L CNN
-	1    3100 4550
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	3100 4750 3100 5000
-Wire Wire Line
-	2900 4450 2800 4450
-Wire Wire Line
-	2800 4450 2800 4050
-Wire Wire Line
-	3650 4450 3300 4450
-Wire Wire Line
-	3650 5050 3650 4450
-Wire Wire Line
-	4750 4050 6800 4050
-Wire Wire Line
-	6800 4050 6800 3350
-$Comp
-L Transistor_FET:IRF9020 QC2
-U 1 1 5CF0EE4C
-P 6850 4400
-F 0 "QC2" V 7101 4400 50  0000 C CNN
-F 1 "702" V 7192 4400 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 7050 4325 50  0001 L CIN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 6850 4400 50  0001 L CNN
-	1    6850 4400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D2BF99F
-P 6550 4500
-F 0 "#PWR?" H 6550 4250 50  0001 C CNN
-F 1 "GND" H 6555 4327 50  0000 C CNN
-F 2 "" H 6550 4500 50  0001 C CNN
-F 3 "" H 6550 4500 50  0001 C CNN
-	1    6550 4500
-	1    0    0    -1  
-$EndComp
-Text HLabel 7600 4500 2    50   Output ~ 0
-V1M-19
-Wire Wire Line
-	5400 4200 6850 4200
-Wire Wire Line
-	5400 3650 5400 4200
-Connection ~ 5400 4200
-Wire Wire Line
-	5400 4200 5400 6150
-Text HLabel 7600 4200 2    50   Output ~ 0
-V1M-21
-Wire Wire Line
-	7600 4200 6850 4200
-Connection ~ 6850 4200
-Wire Wire Line
-	6550 4500 6650 4500
-Wire Wire Line
-	7050 4500 7600 4500
-Text HLabel 7600 2050 2    50   Output ~ 0
+Text HLabel 8500 2050 2    50   Output ~ 0
 V1M-61
-Wire Wire Line
-	7600 2050 6700 2050
-Connection ~ 6700 2050
-Wire Wire Line
-	6700 2050 6700 2250
-Text HLabel 10000 1000 2    50   Output ~ 0
+Text HLabel 10650 750  2    50   Output ~ 0
 V1M-5
-Text HLabel 10000 1150 2    50   Output ~ 0
+Text HLabel 10650 900  2    50   Output ~ 0
 V1M-20
-Text HLabel 10000 1300 2    50   Output ~ 0
+Text HLabel 10650 1050 2    50   Output ~ 0
 V1M-36
-Text HLabel 10000 1450 2    50   Output ~ 0
+Text HLabel 10650 1200 2    50   Output ~ 0
 V1M-59
 $Comp
 L power:GND #PWR?
 U 1 1 5D4307EC
-P 9750 1550
-F 0 "#PWR?" H 9750 1300 50  0001 C CNN
-F 1 "GND" H 9755 1377 50  0000 C CNN
-F 2 "" H 9750 1550 50  0001 C CNN
-F 3 "" H 9750 1550 50  0001 C CNN
-	1    9750 1550
+P 10400 1300
+F 0 "#PWR?" H 10400 1050 50  0001 C CNN
+F 1 "GND" H 10405 1127 50  0000 C CNN
+F 2 "" H 10400 1300 50  0001 C CNN
+F 3 "" H 10400 1300 50  0001 C CNN
+	1    10400 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9750 1550 9750 1450
+	10400 1300 10400 1200
 Wire Wire Line
-	9750 1000 10000 1000
+	10400 750  10650 750 
 Wire Wire Line
-	9750 1150 10000 1150
-Connection ~ 9750 1150
+	10400 900  10650 900 
+Connection ~ 10400 900 
 Wire Wire Line
-	9750 1150 9750 1000
+	10400 900  10400 750 
 Wire Wire Line
-	9750 1300 10000 1300
-Connection ~ 9750 1300
+	10400 1050 10650 1050
+Connection ~ 10400 1050
 Wire Wire Line
-	9750 1300 9750 1150
+	10400 1050 10400 900 
 Wire Wire Line
-	9750 1450 10000 1450
-Connection ~ 9750 1450
+	10400 1200 10650 1200
+Connection ~ 10400 1200
 Wire Wire Line
-	9750 1450 9750 1300
+	10400 1200 10400 1050
+$Comp
+L Device:R_US RC2
+U 1 1 5CE6FEE5
+P 2650 1250
+F 0 "RC2" V 2445 1250 50  0000 C CNN
+F 1 "1.37k" V 2536 1250 50  0000 C CNN
+F 2 "" V 2690 1240 50  0001 C CNN
+F 3 "~" H 2650 1250 50  0001 C CNN
+	1    2650 1250
+	-1   0    0    1   
+$EndComp
+Connection ~ 2650 1000
+Wire Wire Line
+	2650 1000 1500 1000
+$Comp
+L Device:R_US RC3
+U 1 1 5CE7A378
+P 6350 2000
+F 0 "RC3" V 6145 2000 50  0000 C CNN
+F 1 "97k" V 6236 2000 50  0000 C CNN
+F 2 "" V 6390 1990 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 1000 6500 1000
+Wire Wire Line
+	6500 1200 6350 1200
+Wire Wire Line
+	6350 1200 6350 1650
+Wire Wire Line
+	6350 2150 6350 2250
+Connection ~ 6350 2650
+Wire Wire Line
+	6350 2650 7000 2650
+$Comp
+L Device:C CC5
+U 1 1 5CEA6550
+P 4500 2950
+F 0 "CC5" V 4650 2900 50  0000 L CNN
+F 1 "C" H 4615 2905 50  0001 L CNN
+F 2 "" H 4538 2800 50  0001 C CNN
+F 3 "~" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 3250
+Wire Wire Line
+	4500 3250 5200 3250
+Text HLabel 1500 650  0    50   Input ~ 0
+V1M-5
+$Comp
+L Device:R_US RC4
+U 1 1 5CEB0DD3
+P 2650 850
+F 0 "RC4" V 2445 850 50  0000 C CNN
+F 1 "78.5k" V 2536 850 50  0000 C CNN
+F 2 "" V 2690 840 50  0001 C CNN
+F 3 "~" H 2650 850 50  0001 C CNN
+	1    2650 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 650  2650 650 
+Wire Wire Line
+	2650 650  2650 700 
+$Comp
+L power:GND #PWR?
+U 1 1 5CEB7501
+P 5400 3050
+F 0 "#PWR?" H 5400 2800 50  0001 C CNN
+F 1 "GND" H 5400 2900 50  0000 C CNN
+F 2 "" H 5400 3050 50  0001 C CNN
+F 3 "" H 5400 3050 50  0001 C CNN
+	1    5400 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 3050 9900 3050
+Connection ~ 9900 3050
+Wire Wire Line
+	9900 3050 9900 4900
+Wire Wire Line
+	6700 1800 6700 2050
+Wire Wire Line
+	6700 2050 8500 2050
+Wire Wire Line
+	6700 800  6700 700 
+Wire Wire Line
+	6700 700  9900 700 
+Wire Wire Line
+	9900 700  9900 1800
+Connection ~ 9900 1800
+NoConn ~ 6800 1400
+NoConn ~ 6900 1400
+$Comp
+L Device:R_US RC5
+U 1 1 5CEB569E
+P 6850 3400
+F 0 "RC5" V 6950 3400 50  0000 C CNN
+F 1 "100k" V 6750 3400 50  0000 C CNN
+F 2 "" V 6890 3390 50  0001 C CNN
+F 3 "~" H 6850 3400 50  0001 C CNN
+	1    6850 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 8500 3250 2    50   Input ~ 0
+V1M-11
+Wire Wire Line
+	8500 3250 8000 3250
+Wire Wire Line
+	6850 3250 6850 2850
+Wire Wire Line
+	6850 2850 7000 2850
+Wire Wire Line
+	5650 1250 5600 1250
+Wire Wire Line
+	5150 1250 5150 1550
+Connection ~ 5150 1550
+Wire Wire Line
+	5150 1550 5200 1550
+Wire Wire Line
+	5950 1250 6100 1250
+Wire Wire Line
+	6100 1250 6100 1800
+Connection ~ 6100 1800
+Wire Wire Line
+	2650 1400 2650 1550
+Wire Wire Line
+	2650 1100 2650 1000
+$Comp
+L Device:R_US RC10
+U 1 1 5CF6A804
+P 5450 1250
+F 0 "RC10" V 5245 1250 50  0000 C CNN
+F 1 "7.6M" V 5336 1250 50  0000 C CNN
+F 2 "" V 5490 1240 50  0001 C CNN
+F 3 "~" H 5450 1250 50  0001 C CNN
+	1    5450 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 1250 5150 1250
+$Comp
+L Device:R_US RC20
+U 1 1 5CF7C700
+P 3600 5050
+F 0 "RC20" V 3395 5050 50  0000 C CNN
+F 1 "98k" V 3486 5050 50  0000 C CNN
+F 2 "" V 3640 5040 50  0001 C CNN
+F 3 "~" H 3600 5050 50  0001 C CNN
+	1    3600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reference_Voltage:LM385D-1.2 DC1
+U 1 1 5CE6CF4E
+P 5900 2800
+F 0 "DC1" V 5946 2713 50  0000 R CNN
+F 1 "0412" V 5855 2713 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5900 2600 50  0001 C CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/LM285-D.PDF" H 5900 2800 50  0001 C CIN
+	1    5900 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D DC2
+U 1 1 5D362828
+P 5800 1250
+F 0 "DC2" H 5750 1350 50  0000 L CNN
+F 1 "D" V 5845 1329 50  0001 L CNN
+F 2 "" H 5800 1250 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US RC7
+U 1 1 5CF909DE
+P 7200 3250
+F 0 "RC7" V 7300 3300 50  0000 C CNN
+F 1 "320k" V 7100 3300 50  0000 C CNN
+F 2 "" V 7240 3240 50  0001 C CNN
+F 3 "~" H 7200 3250 50  0001 C CNN
+	1    7200 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 3250 6850 3250
+$Comp
+L Device:R_US RC15
+U 1 1 5CF91984
+P 3450 3250
+F 0 "RC15" V 3245 3250 50  0000 C CNN
+F 1 "265k" V 3336 3250 50  0000 C CNN
+F 2 "" V 3490 3240 50  0001 C CNN
+F 3 "~" H 3450 3250 50  0001 C CNN
+	1    3450 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US RC16
+U 1 1 5CFE14E8
+P 2200 5150
+F 0 "RC16" V 1995 5150 50  0000 C CNN
+F 1 "99k" V 2086 5150 50  0000 C CNN
+F 2 "" V 2240 5140 50  0001 C CNN
+F 3 "~" H 2200 5150 50  0001 C CNN
+	1    2200 5150
+	-1   0    0    1   
+$EndComp
+Connection ~ 2200 5350
+Wire Wire Line
+	5950 5600 5950 5350
+Wire Wire Line
+	4500 3250 4500 3100
+Wire Wire Line
+	4500 2800 4500 2650
+Connection ~ 4500 2650
+Wire Wire Line
+	4500 2650 5900 2650
+Wire Wire Line
+	4050 3250 4050 3050
+Wire Wire Line
+	4050 3250 4500 3250
+Wire Wire Line
+	4050 2750 4050 2650
+Wire Wire Line
+	4050 2650 4500 2650
+$Comp
+L Comparator:LTC1040CN UC1
+U 2 1 5CE7EB23
+P 4200 6250
+F 0 "UC1" H 4400 6650 50  0000 C CNN
+F 1 "LTC1040CN" H 4500 6550 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 4450 6250 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1040fa.pdf" H 4200 6250 50  0001 C CNN
+	2    4200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6150 3850 6150
+Connection ~ 2900 6150
+$Comp
+L power:GND #PWR?
+U 1 1 5CE89E58
+P 2900 6500
+F 0 "#PWR?" H 2900 6250 50  0001 C CNN
+F 1 "GND" H 2905 6327 50  0000 C CNN
+F 2 "" H 2900 6500 50  0001 C CNN
+F 3 "" H 2900 6500 50  0001 C CNN
+	1    2900 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6200 2900 6150
+$Comp
+L Device:C CC3
+U 1 1 5CE88D36
+P 2900 6350
+F 0 "CC3" H 3015 6350 50  0000 L CNN
+F 1 "C" H 3015 6305 50  0001 L CNN
+F 2 "" H 2938 6200 50  0001 C CNN
+F 3 "~" H 2900 6350 50  0001 C CNN
+	1    2900 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6150 2900 6150
+Text HLabel 1500 6150 0    50   Input ~ 0
+V1M-16
+Connection ~ 3750 6500
+Wire Wire Line
+	3750 6350 3850 6350
+Wire Wire Line
+	3750 6500 3750 6350
+Wire Wire Line
+	3750 6500 3850 6500
+Wire Wire Line
+	3750 6550 3750 6500
+$Comp
+L power:GND #PWR?
+U 1 1 5CE86BB9
+P 3750 6550
+F 0 "#PWR?" H 3750 6300 50  0001 C CNN
+F 1 "GND" H 3755 6377 50  0000 C CNN
+F 2 "" H 3750 6550 50  0001 C CNN
+F 3 "" H 3750 6550 50  0001 C CNN
+	1    3750 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 6250 5400 6250
+$Comp
+L Transistor_FET:IRF9020 QC7
+U 1 1 5CF1AA8E
+P 4050 5250
+F 0 "QC7" V 4301 5250 50  0000 C CNN
+F 1 "IRF9020" V 4392 5250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 4250 5175 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 4050 5250 50  0001 L CNN
+	1    4050 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 5300 2200 5350
+Wire Wire Line
+	1500 4200 1700 4200
+Connection ~ 1700 4200
+Wire Wire Line
+	4050 4250 4050 4200
+Connection ~ 4050 4200
+Wire Wire Line
+	4050 4200 4750 4200
+Wire Wire Line
+	2200 5350 3600 5350
+Wire Wire Line
+	4050 4650 4050 4800
+Wire Wire Line
+	3600 5350 3600 5200
+Connection ~ 3600 5350
+Wire Wire Line
+	3600 5350 3850 5350
+Wire Wire Line
+	3600 4900 3600 4800
+Wire Wire Line
+	3600 4800 4050 4800
+Connection ~ 4050 4800
+Wire Wire Line
+	4050 4800 4050 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5D2BF99F
+P 6050 4450
+F 0 "#PWR?" H 6050 4200 50  0001 C CNN
+F 1 "GND" H 6055 4277 50  0000 C CNN
+F 2 "" H 6050 4450 50  0001 C CNN
+F 3 "" H 6050 4450 50  0001 C CNN
+	1    6050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4450 6150 4450
+Wire Wire Line
+	6550 4450 6600 4450
+Text HLabel 8450 4200 2    50   Input ~ 0
+V1M-18
+$Comp
+L Device:R_US RC13
+U 1 1 5CF8342A
+P 6850 4200
+F 0 "RC13" V 6950 4200 50  0000 C CNN
+F 1 "99k" V 6736 4200 50  0000 C CNN
+F 2 "" V 6890 4190 50  0001 C CNN
+F 3 "~" H 6850 4200 50  0001 C CNN
+	1    6850 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 4450 6600 4200
+Wire Wire Line
+	6600 4200 6700 4200
+Connection ~ 6600 4450
+Wire Wire Line
+	5950 5350 4250 5350
+Text HLabel 8450 4450 2    50   Output ~ 0
+V1M-19
+Wire Wire Line
+	6600 4450 8450 4450
+Wire Wire Line
+	8450 4200 8000 4200
+Wire Wire Line
+	6350 3350 6350 4000
+Wire Wire Line
+	3250 3450 4050 3450
+$Comp
+L Device:R_US RC19
+U 1 1 5D52D626
+P 4750 3700
+F 0 "RC19" V 4545 3700 50  0000 C CNN
+F 1 "98k" V 4636 3700 50  0000 C CNN
+F 2 "" V 4790 3690 50  0001 C CNN
+F 3 "~" H 4750 3700 50  0001 C CNN
+	1    4750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3550 4750 3450
+Connection ~ 4750 3450
+Wire Wire Line
+	4750 3450 5200 3450
+$Comp
+L Transistor_FET:IRF9020 QC4
+U 1 1 5CF08979
+P 2200 3900
+F 0 "QC4" V 2200 4100 50  0000 C CNN
+F 1 "702" V 2100 4100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 2400 3825 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 2200 3900 50  0001 L CNN
+	1    2200 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 4000 5200 4000
+Wire Wire Line
+	1700 4200 3250 4200
+Wire Wire Line
+	2000 4000 1700 4000
+Wire Wire Line
+	1700 4000 1700 4200
+Text HLabel 2650 4950 2    50   Output ~ 0
+V1M-41
+Wire Wire Line
+	2650 4950 2200 4950
+Wire Wire Line
+	2200 4950 2200 5000
+$Comp
+L Transistor_FET:IRF9020 QC3
+U 1 1 5CF09852
+P 2100 4650
+F 0 "QC3" H 2400 4700 50  0000 C CNN
+F 1 "702" H 2400 4600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 2300 4575 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 2100 4650 50  0001 L CNN
+	1    2100 4650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1500 4450 2200 4450
+Connection ~ 2200 4450
+Wire Wire Line
+	2200 4450 3750 4450
+Wire Wire Line
+	2200 4850 2200 4950
+Connection ~ 2200 4950
+Wire Wire Line
+	1500 4650 1900 4650
+Wire Wire Line
+	1500 3650 2200 3650
+Wire Wire Line
+	2200 3700 2200 3650
+Connection ~ 2200 3650
+Wire Wire Line
+	2200 3650 2950 3650
+Text Notes 950  7150 0    50   ~ 0
+Q1 source\npower charger
+Text Notes 8850 4050 0    50   ~ 0
+Q1 gate\nenable power charger
+Text Notes 2600 4850 0    50   ~ 0
+enable +12V\n& SCSI cur.
+Text Notes 8900 2850 0    50   ~ 0
+Q16 gate\nenable RAM, TTL and \n2nd stage MOSFETs
+$Comp
+L Device:R_US RC1
+U 1 1 5D706999
+P 7300 1650
+F 0 "RC1" V 7400 1650 50  0000 C CNN
+F 1 "?" V 7200 1650 50  0001 C CNN
+F 2 "" V 7340 1640 50  0001 C CNN
+F 3 "~" H 7300 1650 50  0001 C CNN
+	1    7300 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 1650 7150 1650
+Connection ~ 6350 1650
+Wire Wire Line
+	6350 1650 6350 1850
+Wire Wire Line
+	7450 1650 7700 1650
+Wire Wire Line
+	7700 1650 7700 1100
+Connection ~ 7700 1100
+Wire Wire Line
+	7700 1100 8500 1100
+Wire Wire Line
+	900  5700 900  3250
+Wire Wire Line
+	900  3250 3300 3250
+Connection ~ 4050 3250
+Connection ~ 4750 4200
+Wire Wire Line
+	4750 3850 4750 4200
+$Comp
+L Transistor_FET:IRF9020 QC6
+U 1 1 5CF09F38
+P 3950 4450
+F 0 "QC6" H 4200 4550 50  0000 C CNN
+F 1 "702" H 4202 4450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 4150 4375 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 3950 4450 50  0001 L CNN
+	1    3950 4450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3250 3850 3250 4200
+Connection ~ 3250 4200
+Wire Wire Line
+	3250 4200 4050 4200
+$Comp
+L Device:R_US RC18
+U 1 1 5D7AD1AB
+P 4050 3700
+F 0 "RC18" V 3845 3700 50  0000 C CNN
+F 1 "386k" V 3936 3700 50  0000 C CNN
+F 2 "" V 4090 3690 50  0001 C CNN
+F 3 "~" H 4050 3700 50  0001 C CNN
+	1    4050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3550 4050 3450
+Connection ~ 4050 3450
+Wire Wire Line
+	4050 3450 4750 3450
+Wire Wire Line
+	4050 3850 4050 4200
+Wire Wire Line
+	5950 5350 8400 5350
+Connection ~ 5950 5350
+$Comp
+L Device:R_US RC21
+U 1 1 5D80CA90
+P 7350 5950
+F 0 "RC21" V 7145 5950 50  0000 C CNN
+F 1 "100k" V 7236 5950 50  0000 C CNN
+F 2 "" V 7390 5940 50  0001 C CNN
+F 3 "~" H 7350 5950 50  0001 C CNN
+	1    7350 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5800 7350 5450
+Wire Wire Line
+	7350 5450 7600 5450
+Connection ~ 7600 5450
+Wire Wire Line
+	7350 6100 7350 6450
+Wire Wire Line
+	7350 6450 7600 6450
+Connection ~ 7600 6450
+$Comp
+L Device:R_US RC22
+U 1 1 5D8364F6
+P 8050 5650
+F 0 "RC22" V 7845 5650 50  0000 C CNN
+F 1 "19k" V 7936 5650 50  0000 C CNN
+F 2 "" V 8090 5640 50  0001 C CNN
+F 3 "~" H 8050 5650 50  0001 C CNN
+	1    8050 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5500 8050 5450
+Connection ~ 8050 5450
+Wire Wire Line
+	8050 5450 8400 5450
+$Comp
+L Regulator_SwitchedCapacitor:LT1054 UC2
+U 1 1 5D1F42AA
+P 8800 5650
+F 0 "UC2" H 8300 5300 50  0000 C CNN
+F 1 "LT1054" H 8300 5200 50  0000 C CNN
+F 2 "" H 8900 5550 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1054lfh.pdf" H 8900 5550 50  0001 C CNN
+	1    8800 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5800 8050 5850
+Wire Wire Line
+	8050 5850 8400 5850
+$Comp
+L Device:R_US RC17
+U 1 1 5D8A8BB9
+P 5200 6550
+F 0 "RC17" V 4995 6550 50  0000 C CNN
+F 1 "99k" V 5086 6550 50  0000 C CNN
+F 2 "" V 5240 6540 50  0001 C CNN
+F 3 "~" H 5200 6550 50  0001 C CNN
+	1    5200 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 6700 5200 6950
+Connection ~ 5200 6950
+Wire Wire Line
+	5200 6950 5700 6950
+Wire Wire Line
+	5200 6400 5200 4000
+Connection ~ 5200 4000
+Wire Wire Line
+	5200 4000 6350 4000
+Wire Wire Line
+	5400 3650 5400 4750
+Wire Wire Line
+	8450 4000 6350 4000
+Connection ~ 6350 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5D9AEEFD
+P 6850 3550
+F 0 "#PWR?" H 6850 3300 50  0001 C CNN
+F 1 "GND" H 6850 3350 50  0000 C CNN
+F 2 "" H 6850 3550 50  0001 C CNN
+F 3 "" H 6850 3550 50  0001 C CNN
+	1    6850 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 3250
+Text HLabel 8450 4750 2    50   Output ~ 0
+V1M-21
+$Comp
+L Transistor_FET:IRF9020 QC2
+U 1 1 5CF0EE4C
+P 6350 4550
+F 0 "QC2" V 6601 4550 50  0000 C CNN
+F 1 "702" V 6692 4550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 6550 4475 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 6350 4550 50  0001 L CNN
+	1    6350 4550
+	0    1    -1   0   
+$EndComp
+Connection ~ 6350 4750
+Wire Wire Line
+	6350 4750 8450 4750
+Wire Wire Line
+	5400 4750 6350 4750
+Connection ~ 5400 4750
+Wire Wire Line
+	5400 4750 5400 6250
+Wire Wire Line
+	8000 4200 8000 3250
+Connection ~ 8000 4200
+Wire Wire Line
+	8000 4200 7000 4200
+Connection ~ 8000 3250
+Wire Wire Line
+	8000 3250 7350 3250
+$Comp
+L Device:R_US RC12
+U 1 1 5DAB1309
+P 4650 7100
+F 0 "RC12" V 4445 7100 50  0000 C CNN
+F 1 "7.5M" V 4536 7100 50  0000 C CNN
+F 2 "" V 4690 7090 50  0001 C CNN
+F 3 "~" H 4650 7100 50  0001 C CNN
+	1    4650 7100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 7100 4900 7100
+Connection ~ 4900 7100
+Wire Wire Line
+	4500 7100 4400 7100
+Wire Wire Line
+	4400 7100 4400 6950
+Connection ~ 4400 6950
+Wire Wire Line
+	4400 6950 5200 6950
+Wire Wire Line
+	3850 6000 3450 6000
+$Comp
+L Device:R_US RC11
+U 1 1 5DAE6FA3
+P 3450 6550
+F 0 "RC11" V 3245 6550 50  0000 C CNN
+F 1 "4.65k" V 3336 6550 50  0000 C CNN
+F 2 "" V 3490 6540 50  0001 C CNN
+F 3 "~" H 3450 6550 50  0001 C CNN
+	1    3450 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 6700 3450 6950
+Connection ~ 3450 6950
+Wire Wire Line
+	3450 6950 4400 6950
+Wire Wire Line
+	3450 6400 3450 6000
+Connection ~ 3450 6000
+Wire Wire Line
+	3450 6000 3300 6000
+$Comp
+L power:GND #PWR?
+U 1 1 5CE8E863
+P 2800 6000
+F 0 "#PWR?" H 2800 5750 50  0001 C CNN
+F 1 "GND" V 2805 5872 50  0000 R CNN
+F 2 "" H 2800 6000 50  0001 C CNN
+F 3 "" H 2800 6000 50  0001 C CNN
+	1    2800 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C CC4
+U 1 1 5CE8D38E
+P 3150 6000
+F 0 "CC4" V 2990 6000 50  0000 C CNN
+F 1 "C" H 3265 5955 50  0001 L CNN
+F 2 "" H 3188 5850 50  0001 C CNN
+F 3 "~" H 3150 6000 50  0001 C CNN
+	1    3150 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US RC9
+U 1 1 5DB10F66
+P 3150 5700
+F 0 "RC9" V 2945 5700 50  0000 C CNN
+F 1 "9.7M" V 3036 5700 50  0000 C CNN
+F 2 "" V 3190 5690 50  0001 C CNN
+F 3 "~" H 3150 5700 50  0001 C CNN
+	1    3150 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 6000 2900 6000
+Wire Wire Line
+	3300 5700 3450 5700
+Wire Wire Line
+	3450 5700 3450 6000
+Wire Wire Line
+	3000 5700 2900 5700
+Wire Wire Line
+	2900 5700 2900 6000
+Connection ~ 2900 6000
+Wire Wire Line
+	2900 6000 3000 6000
+$Comp
+L Device:R_US RC6
+U 1 1 5DC18BD6
+P 3450 2400
+F 0 "RC6" V 3245 2400 50  0000 C CNN
+F 1 "960k" V 3336 2400 50  0000 C CNN
+F 2 "" V 3490 2390 50  0001 C CNN
+F 3 "~" H 3450 2400 50  0001 C CNN
+	1    3450 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 5350 2200 5700
+Connection ~ 8000 2750
+Wire Wire Line
+	8000 2750 7600 2750
+Wire Wire Line
+	8000 2400 8000 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5CE7C1FC
+P 6900 2450
+F 0 "#PWR?" H 6900 2200 50  0001 C CNN
+F 1 "GND" H 6905 2277 50  0000 C CNN
+F 2 "" H 6900 2450 50  0001 C CNN
+F 3 "" H 6900 2450 50  0001 C CNN
+	1    6900 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2400 8000 2400
+Wire Wire Line
+	3600 3250 4050 3250
+Wire Wire Line
+	900  5700 2200 5700
+Wire Wire Line
+	900  3250 900  2400
+Connection ~ 900  3250
+Wire Wire Line
+	1500 6950 3450 6950
+Text Notes 1000 6450 0    50   ~ 0
+Q1 drain\nenabled power charger\n(after resistors)
+Text Notes 8850 4750 0    50   ~ 0
+not connected
+Text Notes 8850 4500 0    50   ~ 0
+To PMGR-33
+Text Notes 8900 3350 0    50   ~ 0
+Q16 drain\nenabled RAM/TTL and\n2nd stage MOSFETs
+Text HLabel 1200 1300 2    50   Output ~ 0
+V1M-52
+$Comp
+L Device:R_US RC8
+U 1 1 5DCAB39B
+P 900 1950
+F 0 "RC8" V 695 1950 50  0000 C CNN
+F 1 "360k" V 786 1950 50  0000 C CNN
+F 2 "" V 940 1940 50  0001 C CNN
+F 3 "~" H 900 1950 50  0001 C CNN
+	1    900  1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2100 900  2400
+Connection ~ 900  2400
+Wire Wire Line
+	900  2400 3300 2400
+Wire Wire Line
+	900  1800 900  1550
+Wire Wire Line
+	900  1550 2650 1550
+$Comp
+L Device:C CC2
+U 1 1 5CE56DA0
+P 2650 1800
+F 0 "CC2" H 2765 1800 50  0000 L CNN
+F 1 "C" H 2765 1755 50  0001 L CNN
+F 2 "" H 2688 1650 50  0001 C CNN
+F 3 "~" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1650 2650 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5CE5775B
+P 2650 1950
+F 0 "#PWR?" H 2650 1700 50  0001 C CNN
+F 1 "GND" H 2655 1777 50  0000 C CNN
+F 2 "" H 2650 1950 50  0001 C CNN
+F 3 "" H 2650 1950 50  0001 C CNN
+	1    2650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1300 900  1300
+Wire Wire Line
+	900  1300 900  1550
+Connection ~ 900  1550
+Connection ~ 5900 2650
+Wire Wire Line
+	5900 2650 6350 2650
+Wire Wire Line
+	6350 2650 6350 2700
+Wire Wire Line
+	6350 3050 6350 3000
+Wire Wire Line
+	6900 2450 7200 2450
+Wire Wire Line
+	8500 2250 6350 2250
+Connection ~ 6350 2250
+Wire Wire Line
+	6350 2250 6350 2650
+Text Notes 8900 2350 0    50   ~ 0
+to SCSI power\nenable logic
+Text Notes 1050 5650 0    50   ~ 0
+Q1 drain\nenabled power charger\nor battery available
+Text Notes 8850 4250 0    50   ~ 0
+same as V1M-11
+Text Notes 8900 1200 0    50   ~ 0
+to PMGR-52\n(through resistor)
+Text Notes 8900 2050 0    50   ~ 0
+not connected
 $EndSCHEMATC

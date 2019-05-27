@@ -6,10 +6,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "Macintosh Portable Power Distribution"
-Date "2019-05-22"
-Rev "0.11"
+Date "2019-05-27"
+Rev "0.12"
 Comp "https://oldcrap.org"
-Comment1 ""
+Comment1 "Author: Pawel Pieczul"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -32,12 +32,12 @@ $EndComp
 $Comp
 L Transistor_FET:IRF9Z30 Q1
 U 1 1 5CE4A288
-P 5500 2100
-F 0 "Q1" H 5706 2054 50  0000 L CNN
-F 1 "IRF9Z30" H 5706 2145 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5700 2025 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/91459/sihf9z30.pdf" H 5500 2100 50  0001 L CNN
-	1    5500 2100
+P 5500 1450
+F 0 "Q1" H 5706 1404 50  0000 L CNN
+F 1 "IRF9Z30" H 5706 1495 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5700 1375 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/91459/sihf9z30.pdf" H 5500 1450 50  0001 L CNN
+	1    5500 1450
 	1    0    0    1   
 $EndComp
 $Comp
@@ -142,7 +142,7 @@ L Device:Q_NPN_BCE Q25
 U 1 1 5CE6526D
 P 3100 5100
 F 0 "Q25" H 3291 5146 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 3291 5055 50  0000 L CNN
+F 1 "U92" H 3291 5055 50  0000 L CNN
 F 2 "" H 3300 5200 50  0001 C CNN
 F 3 "~" H 3100 5100 50  0001 C CNN
 	1    3100 5100
@@ -384,214 +384,141 @@ Connection ~ 8000 5950
 $Comp
 L Transistor_FET:IRF9020 Q2
 U 1 1 5CF30091
-P 10250 5150
-F 0 "Q2" H 10456 5104 50  0000 L CNN
-F 1 "IRF9020" H 10456 5195 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10450 5075 50  0001 L CIN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 10250 5150 50  0001 L CNN
-	1    10250 5150
-	1    0    0    1   
+P 10450 5150
+F 0 "Q2" H 10656 5104 50  0000 L CNN
+F 1 "IRF9020" H 10656 5195 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10650 5075 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 10450 5150 50  0001 L CNN
+	1    10450 5150
+	-1   0    0    1   
 $EndComp
 Text HLabel 10450 5450 2    50   Output ~ 0
-SERIAL
+SERIAL-VCC
 Wire Wire Line
 	10350 5350 10350 5450
 Wire Wire Line
 	10350 5450 10450 5450
-Text Notes 10250 5700 0    50   ~ 0
-To 26LS3x chips\n(ADB, serial I/O)
-$Comp
-L Device:R_US R26
-U 1 1 5CF32006
-P 9800 6400
-F 0 "R26" V 9595 6400 50  0000 C CNN
-F 1 "10k" V 9686 6400 50  0000 C CNN
-F 2 "" V 9840 6390 50  0001 C CNN
-F 3 "~" H 9800 6400 50  0001 C CNN
-	1    9800 6400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10050 5150 9950 5150
+Text Notes 10300 5600 0    50   ~ 0
+To 26LS3x (Vcc)
 Wire Wire Line
 	9300 4850 10350 4850
 Connection ~ 9300 4850
 Wire Wire Line
 	10350 4850 10350 4950
-Text Notes 9550 6450 0    50   ~ 0
-?
 Wire Notes Line
 	5750 4650 11050 4650
 Wire Notes Line
 	11050 6100 5750 6100
-Wire Wire Line
-	9950 5150 9950 6400
-Text Notes 10050 4800 0    50   ~ 0
+Text Notes 10050 6050 0    50   ~ 0
 Second stage MOSFETs
 Wire Notes Line
 	11050 6100 11050 4650
 Wire Notes Line
 	5750 4650 5750 6100
-Wire Wire Line
-	6200 3600 6200 4200
 $Comp
 L Device:Battery BT1
 U 1 1 5CF6715E
-P 7250 3350
-F 0 "BT1" H 7358 3396 50  0000 L CNN
-F 1 "6V Battery Pack" H 7358 3305 50  0000 L CNN
-F 2 "" V 7250 3410 50  0001 C CNN
-F 3 "~" V 7250 3410 50  0001 C CNN
-	1    7250 3350
+P 7000 3350
+F 0 "BT1" H 7108 3396 50  0000 L CNN
+F 1 "6V Battery Pack" H 7108 3305 50  0000 L CNN
+F 2 "" V 7000 3410 50  0001 C CNN
+F 3 "~" V 7000 3410 50  0001 C CNN
+	1    7000 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CF68772
-P 7250 3600
-F 0 "#PWR?" H 7250 3350 50  0001 C CNN
-F 1 "GND" H 7255 3427 50  0000 C CNN
-F 2 "" H 7250 3600 50  0001 C CNN
-F 3 "" H 7250 3600 50  0001 C CNN
-	1    7250 3600
+P 7000 3600
+F 0 "#PWR?" H 7000 3350 50  0001 C CNN
+F 1 "GND" H 7005 3427 50  0000 C CNN
+F 2 "" H 7000 3600 50  0001 C CNN
+F 3 "" H 7000 3600 50  0001 C CNN
+	1    7000 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 3600 7250 3550
+	7000 3600 7000 3550
 Wire Wire Line
-	7250 3000 7250 3150
+	7000 3000 7000 3150
 Wire Wire Line
-	6200 3000 7250 3000
-$Comp
-L Device:Battery_Cell BT2
-U 1 1 5CF6BEBA
-P 8800 3400
-F 0 "BT2" H 8918 3496 50  0000 L CNN
-F 1 "9V backup battery" H 8918 3405 50  0000 L CNN
-F 2 "" V 8800 3460 50  0001 C CNN
-F 3 "~" V 8800 3460 50  0001 C CNN
-	1    8800 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CF6CCA5
-P 8800 3600
-F 0 "#PWR?" H 8800 3350 50  0001 C CNN
-F 1 "GND" H 8805 3427 50  0000 C CNN
-F 2 "" H 8800 3600 50  0001 C CNN
-F 3 "" H 8800 3600 50  0001 C CNN
-	1    8800 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 3500 8800 3600
-Text Notes 7550 2950 0    50   ~ 0
+	6200 3000 7000 3000
+Text Notes 7050 2950 0    50   ~ 0
 Link between batteries\nis on the battery switch in\nthe battery compartment.
-Wire Wire Line
-	8800 3200 8800 3000
-Wire Wire Line
-	8800 3000 7250 3000
-Connection ~ 7250 3000
-Text HLabel 9850 3000 2    50   Output ~ 0
+Text HLabel 8400 3000 2    50   Output ~ 0
 V1M-25
-Wire Wire Line
-	9850 3000 8800 3000
-Connection ~ 8800 3000
-Wire Notes Line
-	6750 4450 6750 2900
 Wire Notes Line
 	6750 2900 1850 2900
-Wire Notes Line
-	1850 2900 1850 4450
-Wire Notes Line
-	1850 4450 6750 4450
 Text Notes 1900 4400 0    50   ~ 0
 First stage MOSFETs
 Wire Wire Line
 	4700 3950 4850 3950
 Wire Wire Line
 	4700 3600 4700 3950
-Text HLabel 6050 1750 2    50   Output ~ 0
+Text HLabel 6050 1100 2    50   Output ~ 0
 V1M-17
 $Comp
 L power:+7.5V #PWR?
 U 1 1 5CF915EE
-P 5600 1600
-F 0 "#PWR?" H 5600 1450 50  0001 C CNN
-F 1 "+7.5V" H 5615 1773 50  0000 C CNN
-F 2 "" H 5600 1600 50  0001 C CNN
-F 3 "" H 5600 1600 50  0001 C CNN
-	1    5600 1600
+P 5600 950
+F 0 "#PWR?" H 5600 800 50  0001 C CNN
+F 1 "+7.5V" H 5615 1123 50  0000 C CNN
+F 2 "" H 5600 950 50  0001 C CNN
+F 3 "" H 5600 950 50  0001 C CNN
+	1    5600 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 1600 5600 1750
+	5600 950  5600 1100
 Wire Wire Line
-	6050 1750 5600 1750
-Connection ~ 5600 1750
+	6050 1100 5600 1100
+Connection ~ 5600 1100
 Wire Wire Line
-	5600 1750 5600 1900
-Text Notes 5400 1350 0    50   ~ 0
+	5600 1100 5600 1250
+Text Notes 5400 700  0    50   ~ 0
 Power charger
 $Comp
 L Device:C C110
 U 1 1 5CF99182
-P 5000 2350
-F 0 "C110" H 5115 2396 50  0000 L CNN
-F 1 "?" H 5115 2305 50  0000 L CNN
-F 2 "" H 5038 2200 50  0001 C CNN
-F 3 "~" H 5000 2350 50  0001 C CNN
-	1    5000 2350
+P 5000 1700
+F 0 "C110" H 5115 1746 50  0000 L CNN
+F 1 "1A4" H 5115 1655 50  0000 L CNN
+F 2 "" H 5038 1550 50  0001 C CNN
+F 3 "~" H 5000 1700 50  0001 C CNN
+	1    5000 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 3000 5600 3000
+	5600 1650 5600 1950
 Wire Wire Line
-	5600 2300 5600 2600
-Connection ~ 5600 3000
+	5300 1450 5000 1450
 Wire Wire Line
-	5600 3000 6200 3000
+	5000 1450 5000 1550
 Wire Wire Line
-	5300 2100 5000 2100
+	5000 1850 5000 1950
 Wire Wire Line
-	5000 2100 5000 2200
-Wire Wire Line
-	5000 2500 5000 2600
-Wire Wire Line
-	5000 2600 5600 2600
-Connection ~ 5600 2600
-Wire Wire Line
-	5600 2600 5600 3000
+	5000 1950 5600 1950
+Connection ~ 5600 1950
 $Comp
 L Device:R_US R157
 U 1 1 5CFA2F42
-P 4550 2100
-F 0 "R157" V 4345 2100 50  0000 C CNN
-F 1 "10k" V 4436 2100 50  0000 C CNN
-F 2 "" V 4590 2090 50  0001 C CNN
-F 3 "~" H 4550 2100 50  0001 C CNN
-	1    4550 2100
+P 4550 1450
+F 0 "R157" V 4345 1450 50  0000 C CNN
+F 1 "10k" V 4436 1450 50  0000 C CNN
+F 2 "" V 4590 1440 50  0001 C CNN
+F 3 "~" H 4550 1450 50  0001 C CNN
+	1    4550 1450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4700 2100 5000 2100
-Connection ~ 5000 2100
-Text HLabel 4150 2100 0    50   Input ~ 0
+	4700 1450 5000 1450
+Connection ~ 5000 1450
+Text HLabel 4150 1450 0    50   Input ~ 0
 V1M-22
 Wire Wire Line
-	4150 2100 4400 2100
+	4150 1450 4400 1450
 Text Notes 900  7450 0    50   ~ 0
 V1M - voltage control module, location 1-4M\nPMGR - power management chip, location H15
-Text HLabel 7250 4200 2    50   Output ~ 0
-RAM-TTL
-Wire Wire Line
-	7250 4200 6200 4200
-Connection ~ 6200 4200
-Wire Wire Line
-	6200 4200 6200 4850
-Text Notes 7150 4450 0    50   ~ 0
-To RAM, RAM slot\nand logic chips
 Text HLabel 5450 6500 0    50   Input ~ 0
 PMGR-37
 Wire Wire Line
@@ -618,10 +545,10 @@ Connection ~ 2550 5700
 Wire Wire Line
 	2550 5700 2400 5700
 $Comp
-L Device:CP1 C?
+L Device:CP1 C25
 U 1 1 5CEB228F
 P 2550 6750
-F 0 "C?" H 2435 6704 50  0000 R CNN
+F 0 "C25" H 2435 6704 50  0000 R CNN
 F 1 "47uF" H 2435 6795 50  0000 R CNN
 F 2 "" H 2550 6750 50  0001 C CNN
 F 3 "~" H 2550 6750 50  0001 C CNN
@@ -634,29 +561,338 @@ Wire Wire Line
 	2550 6900 2550 7050
 Wire Wire Line
 	2550 6600 2550 6200
-Text HLabel 9550 1400 2    50   Output ~ 0
+Text HLabel 1900 1050 2    50   Output ~ 0
 V1M-39
-Text HLabel 9550 1950 2    50   Output ~ 0
+Text HLabel 1900 1600 2    50   Output ~ 0
 V1M-41
 $Comp
 L Device:CP1 C16
 U 1 1 5CF544A6
-P 9150 1700
-F 0 "C16" H 9265 1746 50  0000 L CNN
-F 1 "100uF" H 9265 1655 50  0000 L CNN
-F 2 "" H 9150 1700 50  0001 C CNN
-F 3 "~" H 9150 1700 50  0001 C CNN
-	1    9150 1700
+P 1500 1350
+F 0 "C16" H 1615 1396 50  0000 L CNN
+F 1 "100uF" H 1615 1305 50  0000 L CNN
+F 2 "" H 1500 1350 50  0001 C CNN
+F 3 "~" H 1500 1350 50  0001 C CNN
+	1    1500 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 1550 9150 1400
+	1500 1200 1500 1050
 Wire Wire Line
-	9150 1400 9550 1400
+	1500 1050 1900 1050
 Wire Wire Line
-	9150 1850 9150 1950
+	1500 1500 1500 1600
 Wire Wire Line
-	9150 1950 9550 1950
+	1500 1600 1900 1600
 NoConn ~ 3950 5900
 NoConn ~ 4050 5900
+Text HLabel 7950 1950 2    50   Output ~ 0
+V1M-16
+$Comp
+L Device:C C?
+U 1 1 5DD477AE
+P 7250 2100
+AR Path="/5DD4174A/5DD477AE" Ref="C?"  Part="1" 
+AR Path="/5CE45908/5DD477AE" Ref="C108"  Part="1" 
+F 0 "C108" H 7365 2146 50  0000 L CNN
+F 1 "1A5" H 7365 2055 50  0000 L CNN
+F 2 "" H 7288 1950 50  0001 C CNN
+F 3 "~" H 7250 2100 50  0001 C CNN
+	1    7250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DD477B4
+P 6850 1950
+AR Path="/5DD4174A/5DD477B4" Ref="R?"  Part="1" 
+AR Path="/5CE45908/5DD477B4" Ref="R158"  Part="1" 
+F 0 "R158" V 6645 1950 50  0000 C CNN
+F 1 "2.2k" V 6736 1950 50  0000 C CNN
+F 2 "" V 6890 1940 50  0001 C CNN
+F 3 "~" H 6850 1950 50  0001 C CNN
+	1    6850 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD477BA
+P 7250 2250
+AR Path="/5DD4174A/5DD477BA" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5DD477BA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7250 2000 50  0001 C CNN
+F 1 "GND" H 7255 2077 50  0000 C CNN
+F 2 "" H 7250 2250 50  0001 C CNN
+F 3 "" H 7250 2250 50  0001 C CNN
+	1    7250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1950 7250 1950
+Wire Wire Line
+	7250 1950 7950 1950
+Connection ~ 7250 1950
+$Comp
+L Device:C C?
+U 1 1 5DD477C3
+P 6450 2100
+AR Path="/5DD4174A/5DD477C3" Ref="C?"  Part="1" 
+AR Path="/5CE45908/5DD477C3" Ref="C109"  Part="1" 
+F 0 "C109" H 6565 2146 50  0000 L CNN
+F 1 "1A5" H 6565 2055 50  0000 L CNN
+F 2 "" H 6488 1950 50  0001 C CNN
+F 3 "~" H 6450 2100 50  0001 C CNN
+	1    6450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1950 6700 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5DD477CA
+P 6450 2250
+AR Path="/5DD4174A/5DD477CA" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5DD477CA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 2000 50  0001 C CNN
+F 1 "GND" H 6455 2077 50  0000 C CNN
+F 2 "" H 6450 2250 50  0001 C CNN
+F 3 "" H 6450 2250 50  0001 C CNN
+	1    6450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DD513F0
+P 6150 1950
+AR Path="/5DD4174A/5DD513F0" Ref="R?"  Part="1" 
+AR Path="/5CE45908/5DD513F0" Ref="R159"  Part="1" 
+F 0 "R159" V 5945 1950 50  0000 C CNN
+F 1 "2.2k" V 6036 1950 50  0000 C CNN
+F 2 "" V 6190 1940 50  0001 C CNN
+F 3 "~" H 6150 1950 50  0001 C CNN
+	1    6150 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 1950 6450 1950
+Connection ~ 6450 1950
+Wire Wire Line
+	5600 1950 5600 3000
+Wire Wire Line
+	4700 3000 5600 3000
+Connection ~ 5600 3000
+Wire Wire Line
+	5600 3000 6200 3000
+Wire Wire Line
+	5600 1950 6000 1950
+$Comp
+L Device:R_US R?
+U 1 1 5DEE1891
+P 2050 2150
+AR Path="/5DD4174A/5DEE1891" Ref="R?"  Part="1" 
+AR Path="/5CE45908/5DEE1891" Ref="R151"  Part="1" 
+F 0 "R151" V 1845 2150 50  0000 C CNN
+F 1 "1k" V 1936 2150 50  0000 C CNN
+F 2 "" V 2090 2140 50  0001 C CNN
+F 3 "~" H 2050 2150 50  0001 C CNN
+	1    2050 2150
+	0    1    1    0   
+$EndComp
+Text HLabel 1800 2150 0    50   Input ~ 0
+V1M-62
+Wire Wire Line
+	1800 2150 1900 2150
+$Comp
+L Device:C C?
+U 1 1 5DEE8ED4
+P 2300 2300
+AR Path="/5DD4174A/5DEE8ED4" Ref="C?"  Part="1" 
+AR Path="/5CE45908/5DEE8ED4" Ref="C107"  Part="1" 
+F 0 "C107" H 2415 2346 50  0000 L CNN
+F 1 "1A4" H 2415 2255 50  0000 L CNN
+F 2 "" H 2338 2150 50  0001 C CNN
+F 3 "~" H 2300 2300 50  0001 C CNN
+	1    2300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DEE97A8
+P 2300 2450
+AR Path="/5DD4174A/5DEE97A8" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5DEE97A8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2300 2200 50  0001 C CNN
+F 1 "GND" H 2305 2277 50  0000 C CNN
+F 2 "" H 2300 2450 50  0001 C CNN
+F 3 "" H 2300 2450 50  0001 C CNN
+	1    2300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2150 2300 2150
+Text HLabel 3050 2150 2    50   Output ~ 0
+J21-31
+Wire Wire Line
+	2300 2150 2750 2150
+Connection ~ 2300 2150
+Text HLabel 3050 2400 2    50   Output ~ 0
+PMGR-52
+Wire Wire Line
+	2750 2150 2750 2400
+Wire Wire Line
+	2750 2400 3050 2400
+Connection ~ 2750 2150
+Wire Wire Line
+	2750 2150 3050 2150
+Text HLabel 9600 3550 0    50   Input ~ 0
+V1M-33
+Text HLabel 10700 3550 2    50   Output ~ 0
+J9-10
+Text Notes 10700 3750 0    50   ~ 0
+Modem\npin 10\n
+$Comp
+L Transistor_FET:IRF9020 Q9
+U 1 1 5DF14E21
+P 10000 4000
+F 0 "Q9" H 10206 3954 50  0000 L CNN
+F 1 "702" H 10206 4045 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10200 3925 50  0001 L CIN
+F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020" H 10000 4000 50  0001 L CNN
+	1    10000 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_PNP_BCE Q8
+U 1 1 5DF165D1
+P 10450 4200
+F 0 "Q8" H 10641 4246 50  0000 L CNN
+F 1 "P2A" H 10641 4155 50  0000 L CNN
+F 2 "" H 10650 4300 50  0001 C CNN
+F 3 "~" H 10450 4200 50  0001 C CNN
+	1    10450 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DF1DFCA
+P 10350 3800
+AR Path="/5DD4174A/5DF1DFCA" Ref="R?"  Part="1" 
+AR Path="/5CE45908/5DF1DFCA" Ref="R101"  Part="1" 
+F 0 "R101" H 10282 3754 50  0000 R CNN
+F 1 "100k" H 10282 3845 50  0000 R CNN
+F 2 "" V 10390 3790 50  0001 C CNN
+F 3 "~" H 10350 3800 50  0001 C CNN
+	1    10350 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9600 3550 9900 3550
+Wire Wire Line
+	10350 3950 10350 4000
+Wire Wire Line
+	10350 3650 10350 3550
+Connection ~ 10350 3550
+$Comp
+L Device:R_US R?
+U 1 1 5DF39D24
+P 10650 4400
+AR Path="/5DD4174A/5DF39D24" Ref="R?"  Part="1" 
+AR Path="/5CE45908/5DF39D24" Ref="R26"  Part="1" 
+F 0 "R26" H 10718 4446 50  0000 L CNN
+F 1 "10k" H 10718 4355 50  0000 L CNN
+F 2 "" V 10690 4390 50  0001 C CNN
+F 3 "~" H 10650 4400 50  0001 C CNN
+	1    10650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3200 7850 3000
+Wire Wire Line
+	7850 3500 7850 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5CF6CCA5
+P 7850 3600
+F 0 "#PWR?" H 7850 3350 50  0001 C CNN
+F 1 "GND" H 7855 3427 50  0000 C CNN
+F 2 "" H 7850 3600 50  0001 C CNN
+F 3 "" H 7850 3600 50  0001 C CNN
+	1    7850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 5CF6BEBA
+P 7850 3400
+F 0 "BT2" H 7968 3496 50  0000 L CNN
+F 1 "9V backup battery" H 7968 3405 50  0000 L CNN
+F 2 "" V 7850 3460 50  0001 C CNN
+F 3 "~" V 7850 3460 50  0001 C CNN
+	1    7850 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 3000
+Wire Wire Line
+	7000 3000 7850 3000
+Connection ~ 7850 3000
+Wire Wire Line
+	7850 3000 8400 3000
+Connection ~ 10350 4000
+Wire Wire Line
+	10650 4250 10650 4200
+Wire Wire Line
+	9900 3800 9900 3550
+Connection ~ 9900 3550
+Wire Wire Line
+	9900 3550 10350 3550
+Wire Wire Line
+	10200 4000 10350 4000
+Wire Wire Line
+	10350 3550 10700 3550
+Wire Notes Line
+	6750 4450 6750 2900
+Wire Notes Line
+	1850 2900 1850 4450
+Wire Notes Line
+	1850 4450 6750 4450
+Text Notes 7150 4550 0    50   ~ 0
+To RAM, RAM slot\nand logic chips
+Wire Wire Line
+	6200 4300 6200 4850
+Connection ~ 6200 4300
+Wire Wire Line
+	6200 3600 6200 4300
+Connection ~ 7050 4150
+Wire Wire Line
+	7050 4000 7050 4150
+Wire Wire Line
+	7250 4000 7050 4000
+Text HLabel 7250 4000 2    50   Output ~ 0
+V1M-18
+Wire Wire Line
+	7050 4300 6200 4300
+Connection ~ 7050 4300
+Wire Wire Line
+	7050 4150 7250 4150
+Wire Wire Line
+	7050 4300 7050 4150
+Text HLabel 7250 4150 2    50   Output ~ 0
+V1M-11
+Wire Wire Line
+	7250 4300 7050 4300
+Text HLabel 7250 4300 2    50   Output ~ 0
+RAM-TTL
+Wire Wire Line
+	10650 5150 10650 4550
+Wire Wire Line
+	10350 4400 10350 4850
+Connection ~ 10350 4850
+Text Notes 9200 4450 0    50   ~ 0
+To 26LS3x (Vee)
+Text HLabel 9750 4300 0    50   Output ~ 0
+SERIAL-VEE
+Wire Wire Line
+	9750 4300 9900 4300
+Wire Wire Line
+	9900 4300 9900 4200
 $EndSCHEMATC
