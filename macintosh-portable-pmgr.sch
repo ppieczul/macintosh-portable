@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+LIBS:macintosh-portable-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS244 U?
+U 1 1 5D18C1C5
+P 2400 2050
+F 0 "U?" H 2400 3031 50  0000 C CNN
+F 1 "74AC244" H 2400 2940 50  0000 C CNN
+F 2 "" H 2400 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 2400 2050 50  0001 C CNN
+	1    2400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS244 U?
+U 1 1 5D18EE70
+P 7000 2050
+F 0 "U?" H 7000 3031 50  0000 C CNN
+F 1 "74AC244" H 7000 2940 50  0000 C CNN
+F 2 "" H 7000 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 7000 2050 50  0001 C CNN
+	1    7000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS244 U?
+U 1 1 5D18F8CC
+P 9400 2050
+F 0 "U?" H 9400 3031 50  0000 C CNN
+F 1 "74AC244" H 9400 2940 50  0000 C CNN
+F 2 "" H 9400 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 9400 2050 50  0001 C CNN
+	1    9400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS244 U?
+U 1 1 5D1B6555
+P 4750 2050
+F 0 "U?" H 4750 3031 50  0000 C CNN
+F 1 "74AC244" H 4750 2940 50  0000 C CNN
+F 2 "" H 4750 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 4750 2050 50  0001 C CNN
+	1    4750 2050
+	1    0    0    -1  
+$EndComp
+Text HLabel 1100 1250 0    50   Input ~ 0
+RAM-TTL
+Wire Wire Line
+	1100 1250 2400 1250
+Wire Wire Line
+	2400 1250 4750 1250
+Connection ~ 2400 1250
+Wire Wire Line
+	4750 1250 7000 1250
+Connection ~ 4750 1250
+Wire Wire Line
+	7000 1250 9400 1250
+Connection ~ 7000 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5D1BDB13
+P 2400 2850
+F 0 "#PWR?" H 2400 2600 50  0001 C CNN
+F 1 "GND" H 2405 2677 50  0000 C CNN
+F 2 "" H 2400 2850 50  0001 C CNN
+F 3 "" H 2400 2850 50  0001 C CNN
+	1    2400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1BE2CB
+P 4750 2850
+F 0 "#PWR?" H 4750 2600 50  0001 C CNN
+F 1 "GND" H 4755 2677 50  0000 C CNN
+F 2 "" H 4750 2850 50  0001 C CNN
+F 3 "" H 4750 2850 50  0001 C CNN
+	1    4750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1BE67B
+P 7000 2850
+F 0 "#PWR?" H 7000 2600 50  0001 C CNN
+F 1 "GND" H 7005 2677 50  0000 C CNN
+F 2 "" H 7000 2850 50  0001 C CNN
+F 3 "" H 7000 2850 50  0001 C CNN
+	1    7000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1BECA0
+P 9400 2850
+F 0 "#PWR?" H 9400 2600 50  0001 C CNN
+F 1 "GND" H 9405 2677 50  0000 C CNN
+F 2 "" H 9400 2850 50  0001 C CNN
+F 3 "" H 9400 2850 50  0001 C CNN
+	1    9400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2450 4250 2550
+Wire Wire Line
+	6500 2450 6500 2550
+Wire Wire Line
+	8900 2450 8900 2550
+Wire Wire Line
+	1900 2450 1900 2550
+$Comp
+L macintosh-portable:M50753 U?
+U 1 1 5CF2D32E
+P 3550 5200
+F 0 "U?" H 3550 6731 50  0000 C CNN
+F 1 "M50753" H 3550 6640 50  0000 C CNN
+F 2 "" H 3700 5150 50  0001 C CNN
+F 3 "" H 3700 5150 50  0001 C CNN
+	1    3550 5200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

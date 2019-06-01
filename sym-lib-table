@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name macintosh-portable)(type Legacy)(uri ${KIPRJMOD}/macintosh-portable.lib)(options "")(descr ""))
+)

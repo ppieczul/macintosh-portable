@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title "Macintosh Portable V1M Module"
 Date "2019-05-27"
 Rev "0.12"
@@ -28,7 +28,7 @@ F 3 "" H 4750 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LTC1040CN UC1
+L macintosh-portable:LTC1040CN UC1
 U 3 1 5CEDE431
 P 6100 6850
 F 0 "UC1" V 6150 7100 50  0000 C CNN
@@ -82,7 +82,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 7250 5700 7250
 $Comp
-L Transistor_FET:IRF9020 QC1
+L macintosh-portable:IRF9020 QC1
 U 1 1 5CEF3E9C
 P 4850 4900
 F 0 "QC1" H 5056 4946 50  0000 L CNN
@@ -117,7 +117,7 @@ $EndComp
 Text HLabel 1500 4650 0    50   Input ~ 0
 V1M-40
 $Comp
-L Transistor_FET:IRF9020 QC5
+L macintosh-portable:IRF9020 QC5
 U 1 1 5CF00785
 P 3150 3650
 F 0 "QC5" V 3150 3850 50  0000 C CNN
@@ -131,8 +131,6 @@ Text HLabel 9750 5550 2    50   Input ~ 0
 V1M-29
 Text HLabel 9750 5950 2    50   Input ~ 0
 V1M-31
-Text Notes 9750 5800 0    50   ~ 0
-100uF\nC16
 $Comp
 L Device:C CC7
 U 1 1 5CF5A4F0
@@ -169,7 +167,7 @@ V1M-25
 Text HLabel 1500 4450 0    50   Input ~ 0
 V1M-37
 $Comp
-L Amplifier_Operational:OP20 OP1
+L macintosh-portable:OP20 OP1
 U 1 1 5CE65425
 P 6800 1100
 F 0 "OP1" H 6900 1250 50  0000 L CNN
@@ -214,7 +212,7 @@ $EndComp
 Text HLabel 8500 2250 2    50   Output ~ 0
 V1M-51
 $Comp
-L Amplifier_Operational:OP20 OP2
+L macintosh-portable:OP20 OP2
 U 1 1 5CE5EDC3
 P 7300 2750
 F 0 "OP2" H 7350 3000 50  0000 L CNN
@@ -225,7 +223,7 @@ F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/129512/AD/OP20HJ.html" H 7350
 	1    0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:OP20 OP3
+L macintosh-portable:OP20 OP3
 U 1 1 5CE5AA98
 P 5500 3350
 F 0 "OP3" H 5550 3500 50  0000 L CNN
@@ -317,7 +315,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 1550 5150 1550
 $Comp
-L Comparator:LTC1040CN UC1
+L macintosh-portable:LTC1040CN UC1
 U 1 1 5CE55934
 P 5550 1800
 F 0 "UC1" H 5650 1450 50  0000 C CNN
@@ -349,8 +347,6 @@ Wire Wire Line
 	9900 1800 9900 3050
 Wire Wire Line
 	5050 4900 9900 4900
-Text HLabel 1500 3650 0    50   Input ~ 0
-V1M-39
 Wire Wire Line
 	4750 4700 4750 4200
 Text HLabel 1500 4200 0    50   Input ~ 0
@@ -406,7 +402,6 @@ F 3 "~" H 2650 1250 50  0001 C CNN
 	1    2650 1250
 	-1   0    0    1   
 $EndComp
-Connection ~ 2650 1000
 Wire Wire Line
 	2650 1000 1500 1000
 $Comp
@@ -420,8 +415,6 @@ F 3 "~" H 6350 2000 50  0001 C CNN
 	1    6350 2000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2650 1000 6500 1000
 Wire Wire Line
 	6500 1200 6350 1200
 Wire Wire Line
@@ -445,23 +438,17 @@ $EndComp
 Connection ~ 4500 3250
 Wire Wire Line
 	4500 3250 5200 3250
-Text HLabel 1500 650  0    50   Input ~ 0
-V1M-5
 $Comp
 L Device:R_US RC4
 U 1 1 5CEB0DD3
-P 2650 850
-F 0 "RC4" V 2445 850 50  0000 C CNN
-F 1 "78.5k" V 2536 850 50  0000 C CNN
-F 2 "" V 2690 840 50  0001 C CNN
-F 3 "~" H 2650 850 50  0001 C CNN
-	1    2650 850 
+P 2650 750
+F 0 "RC4" V 2445 750 50  0000 C CNN
+F 1 "78.5k" V 2536 750 50  0000 C CNN
+F 2 "" V 2690 740 50  0001 C CNN
+F 3 "~" H 2650 750 50  0001 C CNN
+	1    2650 750 
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1500 650  2650 650 
-Wire Wire Line
-	2650 650  2650 700 
 $Comp
 L power:GND #PWR?
 U 1 1 5CEB7501
@@ -511,16 +498,16 @@ Wire Wire Line
 Wire Wire Line
 	6850 2850 7000 2850
 Wire Wire Line
-	5650 1250 5600 1250
+	5650 1300 5600 1300
 Wire Wire Line
-	5150 1250 5150 1550
+	5150 1300 5150 1550
 Connection ~ 5150 1550
 Wire Wire Line
 	5150 1550 5200 1550
 Wire Wire Line
-	5950 1250 6100 1250
+	5950 1300 6100 1300
 Wire Wire Line
-	6100 1250 6100 1800
+	6100 1300 6100 1800
 Connection ~ 6100 1800
 Wire Wire Line
 	2650 1400 2650 1550
@@ -529,16 +516,16 @@ Wire Wire Line
 $Comp
 L Device:R_US RC10
 U 1 1 5CF6A804
-P 5450 1250
-F 0 "RC10" V 5245 1250 50  0000 C CNN
-F 1 "7.6M" V 5336 1250 50  0000 C CNN
-F 2 "" V 5490 1240 50  0001 C CNN
-F 3 "~" H 5450 1250 50  0001 C CNN
-	1    5450 1250
+P 5450 1300
+F 0 "RC10" V 5245 1300 50  0000 C CNN
+F 1 "7.6M" V 5336 1300 50  0000 C CNN
+F 2 "" V 5490 1290 50  0001 C CNN
+F 3 "~" H 5450 1300 50  0001 C CNN
+	1    5450 1300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5300 1250 5150 1250
+	5300 1300 5150 1300
 $Comp
 L Device:R_US RC20
 U 1 1 5CF7C700
@@ -551,7 +538,7 @@ F 3 "~" H 3600 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Reference_Voltage:LM385D-1.2 DC1
+L macintosh-portable:LM385D DC1
 U 1 1 5CE6CF4E
 P 5900 2800
 F 0 "DC1" V 5946 2713 50  0000 R CNN
@@ -564,12 +551,12 @@ $EndComp
 $Comp
 L Device:D DC2
 U 1 1 5D362828
-P 5800 1250
-F 0 "DC2" H 5750 1350 50  0000 L CNN
-F 1 "D" V 5845 1329 50  0001 L CNN
-F 2 "" H 5800 1250 50  0001 C CNN
-F 3 "~" H 5800 1250 50  0001 C CNN
-	1    5800 1250
+P 5800 1300
+F 0 "DC2" H 5750 1400 50  0000 L CNN
+F 1 "D" V 5845 1379 50  0001 L CNN
+F 2 "" H 5800 1300 50  0001 C CNN
+F 3 "~" H 5800 1300 50  0001 C CNN
+	1    5800 1300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -626,7 +613,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 2650 4500 2650
 $Comp
-L Comparator:LTC1040CN UC1
+L macintosh-portable:LTC1040CN UC1
 U 2 1 5CE7EB23
 P 4200 6250
 F 0 "UC1" H 4400 6650 50  0000 C CNN
@@ -690,7 +677,7 @@ $EndComp
 Wire Wire Line
 	4750 6250 5400 6250
 $Comp
-L Transistor_FET:IRF9020 QC7
+L macintosh-portable:IRF9020 QC7
 U 1 1 5CF1AA8E
 P 4050 5250
 F 0 "QC7" V 4301 5250 50  0000 C CNN
@@ -788,7 +775,7 @@ Connection ~ 4750 3450
 Wire Wire Line
 	4750 3450 5200 3450
 $Comp
-L Transistor_FET:IRF9020 QC4
+L macintosh-portable:IRF9020 QC4
 U 1 1 5CF08979
 P 2200 3900
 F 0 "QC4" V 2200 4100 50  0000 C CNN
@@ -806,14 +793,14 @@ Wire Wire Line
 	2000 4000 1700 4000
 Wire Wire Line
 	1700 4000 1700 4200
-Text HLabel 2650 4950 2    50   Output ~ 0
+Text HLabel 2850 4950 2    50   Output ~ 0
 V1M-41
 Wire Wire Line
-	2650 4950 2200 4950
+	2850 4950 2200 4950
 Wire Wire Line
 	2200 4950 2200 5000
 $Comp
-L Transistor_FET:IRF9020 QC3
+L macintosh-portable:IRF9020 QC3
 U 1 1 5CF09852
 P 2100 4650
 F 0 "QC3" H 2400 4700 50  0000 C CNN
@@ -833,19 +820,10 @@ Wire Wire Line
 Connection ~ 2200 4950
 Wire Wire Line
 	1500 4650 1900 4650
-Wire Wire Line
-	1500 3650 2200 3650
-Wire Wire Line
-	2200 3700 2200 3650
-Connection ~ 2200 3650
-Wire Wire Line
-	2200 3650 2950 3650
 Text Notes 950  7150 0    50   ~ 0
 Q1 source\npower charger
 Text Notes 8850 4050 0    50   ~ 0
 Q1 gate\nenable power charger
-Text Notes 2600 4850 0    50   ~ 0
-enable +12V\n& SCSI cur.
 Text Notes 8900 2850 0    50   ~ 0
 Q16 gate\nenable RAM, TTL and \n2nd stage MOSFETs
 $Comp
@@ -872,15 +850,13 @@ Connection ~ 7700 1100
 Wire Wire Line
 	7700 1100 8500 1100
 Wire Wire Line
-	900  5700 900  3250
-Wire Wire Line
 	900  3250 3300 3250
 Connection ~ 4050 3250
 Connection ~ 4750 4200
 Wire Wire Line
 	4750 3850 4750 4200
 $Comp
-L Transistor_FET:IRF9020 QC6
+L macintosh-portable:IRF9020 QC6
 U 1 1 5CF09F38
 P 3950 4450
 F 0 "QC6" H 4200 4550 50  0000 C CNN
@@ -1009,7 +985,7 @@ Connection ~ 6850 3250
 Text HLabel 8450 4750 2    50   Output ~ 0
 V1M-21
 $Comp
-L Transistor_FET:IRF9020 QC2
+L macintosh-portable:IRF9020 QC2
 U 1 1 5CF0EE4C
 P 6350 4550
 F 0 "QC2" V 6601 4550 50  0000 C CNN
@@ -1136,8 +1112,6 @@ F 3 "~" H 3450 2400 50  0001 C CNN
 	1    3450 2400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2200 5350 2200 5700
 Connection ~ 8000 2750
 Wire Wire Line
 	8000 2750 7600 2750
@@ -1158,8 +1132,6 @@ Wire Wire Line
 	3600 2400 8000 2400
 Wire Wire Line
 	3600 3250 4050 3250
-Wire Wire Line
-	900  5700 2200 5700
 Wire Wire Line
 	900  3250 900  2400
 Connection ~ 900  3250
@@ -1248,4 +1220,59 @@ Text Notes 8900 1200 0    50   ~ 0
 to PMGR-52\n(through resistor)
 Text Notes 8900 2050 0    50   ~ 0
 not connected
+Text Notes 10200 5400 0    50   ~ 0
+Q1 & Q8\nEnable serial I/O ports
+Text Notes 10200 5800 0    50   ~ 0
+100uF\nC16
+Wire Wire Line
+	2200 5350 2200 5700
+Wire Wire Line
+	900  5700 900  3250
+Wire Wire Line
+	900  5700 2200 5700
+Wire Wire Line
+	2200 3650 2950 3650
+Connection ~ 2200 3650
+Wire Wire Line
+	2200 3700 2200 3650
+Wire Wire Line
+	1500 3650 2200 3650
+Text HLabel 1500 3650 0    50   Input ~ 0
+V1M-39
+Text Notes 2750 5200 0    50   ~ 0
+enable +12V\n& SCSI cur.
+Text Notes 1600 1350 0    50   ~ 0
+2x47uF capacitor\nto V1M-51
+$Comp
+L power:GND #PWR?
+U 1 1 5D06E311
+P 3050 650
+F 0 "#PWR?" H 3050 400 50  0001 C CNN
+F 1 "GND" H 3055 477 50  0000 C CNN
+F 2 "" H 3050 650 50  0001 C CNN
+F 3 "" H 3050 650 50  0001 C CNN
+	1    3050 650 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 1000
+Wire Wire Line
+	2650 600  2650 550 
+Wire Wire Line
+	2650 550  3050 550 
+Wire Wire Line
+	3050 550  3050 650 
+Wire Wire Line
+	2650 1000 6500 1000
+Wire Wire Line
+	2650 900  2650 1000
+Text Notes 850  950  0    50   ~ 0
+not connected
+Text Notes 650  4500 0    50   ~ 0
+From\nPMGR-38
+Text Notes 650  3700 0    50   ~ 0
+From\nPMGR-31
+Text Notes 550  4200 0    50   ~ 0
+not connected
+Text Notes 650  4750 0    50   ~ 0
+From\n74244 pin 3
 $EndSCHEMATC

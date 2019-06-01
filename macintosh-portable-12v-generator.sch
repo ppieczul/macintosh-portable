@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title "Macintosh Portable 12V Generator Circuit"
 Date "2019-05-27"
 Rev "0.12"
@@ -117,7 +117,7 @@ Wire Wire Line
 	6400 4500 6400 4350
 Connection ~ 6400 4350
 $Comp
-L Transistor_FET:IRF9020 Q21
+L macintosh-portable:IRF9020 Q21
 U 1 1 5CFB719D
 P 7600 4450
 F 0 "Q21" H 7806 4404 50  0000 L CNN

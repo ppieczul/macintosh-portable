@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 702
+D 0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92
+K N-Channel MOSFET Logic-Level
+F https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N7002.PDF
+$ENDCMP
+#
+$CMP IRF9020
+D -9.9A Id, -50V Vds, HEXFET P-Channel MOSFET, TO-252
+K HEXFET P-Channel MOSFET
+F https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf0469e6f3b5ab679d1db&type=M&term=IRFR9020
+$ENDCMP
+#
+#End Doc Library

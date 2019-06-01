@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "Macintosh Portable Power Distribution"
 Date "2019-05-27"
 Rev "0.12"
@@ -16,8 +16,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 2600 4050 2    50   Output ~ 0
 VR1-Vin
-Text HLabel 3000 3650 0    50   Input ~ 0
-V1M-41
 $Comp
 L Transistor_FET:IRF9Z30 Q15
 U 1 1 5CE51446
@@ -51,15 +49,6 @@ F 3 "https://www.vishay.com/docs/91459/sihf9z30.pdf" H 2600 3400 50  0001 L CNN
 	1    2600 3400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2800 3400 3150 3400
-Wire Wire Line
-	3000 3650 3150 3650
-Wire Wire Line
-	3150 3650 3150 3400
-Connection ~ 3150 3400
-Wire Wire Line
-	3150 3400 3250 3400
 $Comp
 L Transistor_FET:IRF9Z30 Q20
 U 1 1 5CE5AA94
@@ -72,7 +61,7 @@ F 3 "https://www.vishay.com/docs/91459/sihf9z30.pdf" H 4600 3400 50  0001 L CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_FET:702 Q24
+L macintosh-portable:702 Q24
 U 1 1 5CE4FDC4
 P 4150 4900
 F 0 "Q24" H 4356 4946 50  0000 L CNN
@@ -273,7 +262,7 @@ Connection ~ 3200 3850
 Wire Wire Line
 	3200 3850 3550 3850
 $Comp
-L Transistor_FET:IRF9020 Q13
+L macintosh-portable:IRF9020 Q13
 U 1 1 5CEFA758
 P 6100 5150
 F 0 "Q13" H 6306 5104 50  0000 L CNN
@@ -284,7 +273,7 @@ F 3 "https://www.datasheetarchive.com/pdf/download.php?id=2891a165ef23b8154bf046
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_FET:IRF9020 Q11
+L macintosh-portable:IRF9020 Q11
 U 1 1 5CF04F79
 P 7100 5150
 F 0 "Q11" H 7306 5104 50  0000 L CNN
@@ -324,7 +313,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 5450 7200 5350
 $Comp
-L Transistor_FET:IRF9020 Q10
+L macintosh-portable:IRF9020 Q10
 U 1 1 5CF26860
 P 8200 5150
 F 0 "Q10" H 8406 5104 50  0000 L CNN
@@ -353,7 +342,7 @@ Wire Wire Line
 	8000 5950 8000 5150
 Connection ~ 6900 5950
 $Comp
-L Transistor_FET:IRF9020 Q4
+L macintosh-portable:IRF9020 Q4
 U 1 1 5CF2AC87
 P 9200 5150
 F 0 "Q4" H 9406 5104 50  0000 L CNN
@@ -382,7 +371,7 @@ Wire Wire Line
 	9000 5950 9000 5150
 Connection ~ 8000 5950
 $Comp
-L Transistor_FET:IRF9020 Q2
+L macintosh-portable:IRF9020 Q2
 U 1 1 5CF30091
 P 10450 5150
 F 0 "Q2" H 10656 5104 50  0000 L CNN
@@ -561,32 +550,9 @@ Wire Wire Line
 	2550 6900 2550 7050
 Wire Wire Line
 	2550 6600 2550 6200
-Text HLabel 1900 1050 2    50   Output ~ 0
-V1M-39
-Text HLabel 1900 1600 2    50   Output ~ 0
-V1M-41
-$Comp
-L Device:CP1 C16
-U 1 1 5CF544A6
-P 1500 1350
-F 0 "C16" H 1615 1396 50  0000 L CNN
-F 1 "100uF" H 1615 1305 50  0000 L CNN
-F 2 "" H 1500 1350 50  0001 C CNN
-F 3 "~" H 1500 1350 50  0001 C CNN
-	1    1500 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 1200 1500 1050
-Wire Wire Line
-	1500 1050 1900 1050
-Wire Wire Line
-	1500 1500 1500 1600
-Wire Wire Line
-	1500 1600 1900 1600
 NoConn ~ 3950 5900
 NoConn ~ 4050 5900
-Text HLabel 7950 1950 2    50   Output ~ 0
+Text HLabel 7750 1950 2    50   Output ~ 0
 V1M-16
 $Comp
 L Device:C C?
@@ -630,7 +596,7 @@ $EndComp
 Wire Wire Line
 	7000 1950 7250 1950
 Wire Wire Line
-	7250 1950 7950 1950
+	7250 1950 7750 1950
 Connection ~ 7250 1950
 $Comp
 L Device:C C?
@@ -688,62 +654,62 @@ Wire Wire Line
 $Comp
 L Device:R_US R?
 U 1 1 5DEE1891
-P 2050 2150
+P 9500 900
 AR Path="/5DD4174A/5DEE1891" Ref="R?"  Part="1" 
 AR Path="/5CE45908/5DEE1891" Ref="R151"  Part="1" 
-F 0 "R151" V 1845 2150 50  0000 C CNN
-F 1 "1k" V 1936 2150 50  0000 C CNN
-F 2 "" V 2090 2140 50  0001 C CNN
-F 3 "~" H 2050 2150 50  0001 C CNN
-	1    2050 2150
+F 0 "R151" V 9295 900 50  0000 C CNN
+F 1 "1k" V 9386 900 50  0000 C CNN
+F 2 "" V 9540 890 50  0001 C CNN
+F 3 "~" H 9500 900 50  0001 C CNN
+	1    9500 900 
 	0    1    1    0   
 $EndComp
-Text HLabel 1800 2150 0    50   Input ~ 0
+Text HLabel 9250 900  0    50   Input ~ 0
 V1M-62
 Wire Wire Line
-	1800 2150 1900 2150
+	9250 900  9350 900 
 $Comp
 L Device:C C?
 U 1 1 5DEE8ED4
-P 2300 2300
+P 9750 1050
 AR Path="/5DD4174A/5DEE8ED4" Ref="C?"  Part="1" 
 AR Path="/5CE45908/5DEE8ED4" Ref="C107"  Part="1" 
-F 0 "C107" H 2415 2346 50  0000 L CNN
-F 1 "1A4" H 2415 2255 50  0000 L CNN
-F 2 "" H 2338 2150 50  0001 C CNN
-F 3 "~" H 2300 2300 50  0001 C CNN
-	1    2300 2300
+F 0 "C107" H 9865 1096 50  0000 L CNN
+F 1 "1A4" H 9865 1005 50  0000 L CNN
+F 2 "" H 9788 900 50  0001 C CNN
+F 3 "~" H 9750 1050 50  0001 C CNN
+	1    9750 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DEE97A8
-P 2300 2450
+P 9750 1200
 AR Path="/5DD4174A/5DEE97A8" Ref="#PWR?"  Part="1" 
 AR Path="/5CE45908/5DEE97A8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2300 2200 50  0001 C CNN
-F 1 "GND" H 2305 2277 50  0000 C CNN
-F 2 "" H 2300 2450 50  0001 C CNN
-F 3 "" H 2300 2450 50  0001 C CNN
-	1    2300 2450
+F 0 "#PWR?" H 9750 950 50  0001 C CNN
+F 1 "GND" H 9755 1027 50  0000 C CNN
+F 2 "" H 9750 1200 50  0001 C CNN
+F 3 "" H 9750 1200 50  0001 C CNN
+	1    9750 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 2150 2300 2150
-Text HLabel 3050 2150 2    50   Output ~ 0
+	9650 900  9750 900 
+Text HLabel 10500 900  2    50   Output ~ 0
 J21-31
 Wire Wire Line
-	2300 2150 2750 2150
-Connection ~ 2300 2150
-Text HLabel 3050 2400 2    50   Output ~ 0
+	9750 900  10200 900 
+Connection ~ 9750 900 
+Text HLabel 10500 1150 2    50   Output ~ 0
 PMGR-52
 Wire Wire Line
-	2750 2150 2750 2400
+	10200 900  10200 1150
 Wire Wire Line
-	2750 2400 3050 2400
-Connection ~ 2750 2150
+	10200 1150 10500 1150
+Connection ~ 10200 900 
 Wire Wire Line
-	2750 2150 3050 2150
+	10200 900  10500 900 
 Text HLabel 9600 3550 0    50   Input ~ 0
 V1M-33
 Text HLabel 10700 3550 2    50   Output ~ 0
@@ -751,7 +717,7 @@ J9-10
 Text Notes 10700 3750 0    50   ~ 0
 Modem\npin 10\n
 $Comp
-L Transistor_FET:IRF9020 Q9
+L macintosh-portable:702 Q9
 U 1 1 5DF14E21
 P 10000 4000
 F 0 "Q9" H 10206 3954 50  0000 L CNN
@@ -855,32 +821,21 @@ Wire Notes Line
 	1850 2900 1850 4450
 Wire Notes Line
 	1850 4450 6750 4450
-Text Notes 7150 4550 0    50   ~ 0
+Text Notes 7000 4550 0    50   ~ 0
 To RAM, RAM slot\nand logic chips
 Wire Wire Line
-	6200 4300 6200 4850
-Connection ~ 6200 4300
-Wire Wire Line
-	6200 3600 6200 4300
-Connection ~ 7050 4150
-Wire Wire Line
-	7050 4000 7050 4150
-Wire Wire Line
-	7250 4000 7050 4000
-Text HLabel 7250 4000 2    50   Output ~ 0
+	7250 3900 7050 3900
+Text HLabel 7250 3900 2    50   Output ~ 0
 V1M-18
 Wire Wire Line
-	7050 4300 6200 4300
-Connection ~ 7050 4300
+	7050 4350 6200 4350
 Wire Wire Line
-	7050 4150 7250 4150
-Wire Wire Line
-	7050 4300 7050 4150
-Text HLabel 7250 4150 2    50   Output ~ 0
+	7050 4050 7250 4050
+Text HLabel 7250 4050 2    50   Output ~ 0
 V1M-11
 Wire Wire Line
-	7250 4300 7050 4300
-Text HLabel 7250 4300 2    50   Output ~ 0
+	7250 4200 7050 4200
+Text HLabel 7250 4200 2    50   Output ~ 0
 RAM-TTL
 Wire Wire Line
 	10650 5150 10650 4550
@@ -895,4 +850,163 @@ Wire Wire Line
 	9750 4300 9900 4300
 Wire Wire Line
 	9900 4300 9900 4200
+Wire Wire Line
+	3150 3400 3250 3400
+Wire Wire Line
+	2800 3400 3150 3400
+Connection ~ 3150 3400
+Wire Wire Line
+	3150 3650 3150 3400
+Wire Wire Line
+	3000 3650 3150 3650
+Text HLabel 3000 3650 0    50   Input ~ 0
+V1M-41
+Wire Wire Line
+	10100 2250 10500 2250
+Wire Wire Line
+	10100 2150 10100 2250
+Wire Wire Line
+	10100 1700 10500 1700
+Wire Wire Line
+	10100 1850 10100 1700
+$Comp
+L Device:CP1 C18
+U 1 1 5CF544A6
+P 10100 2000
+F 0 "C18" H 10215 2046 50  0000 L CNN
+F 1 "100uF" H 10215 1955 50  0000 L CNN
+F 2 "" H 10100 2000 50  0001 C CNN
+F 3 "~" H 10100 2000 50  0001 C CNN
+	1    10100 2000
+	1    0    0    -1  
+$EndComp
+Text HLabel 10500 2250 2    50   Output ~ 0
+V1M-31
+Text HLabel 10500 1700 2    50   Output ~ 0
+V1M-29
+$Comp
+L Device:R_US R147
+U 1 1 5D12FA45
+P 3850 2200
+F 0 "R147" V 3645 2200 50  0000 C CNN
+F 1 "100k" V 3736 2200 50  0000 C CNN
+F 2 "" V 3890 2190 50  0001 C CNN
+F 3 "~" H 3850 2200 50  0001 C CNN
+	1    3850 2200
+	-1   0    0    1   
+$EndComp
+Text HLabel 4100 1950 2    50   Output ~ 0
+V1M-40
+$Comp
+L Device:C C102
+U 1 1 5D1473B8
+P 3450 2200
+F 0 "C102" H 3565 2246 50  0000 L CNN
+F 1 "1A4" H 3565 2155 50  0000 L CNN
+F 2 "" H 3488 2050 50  0001 C CNN
+F 3 "~" H 3450 2200 50  0001 C CNN
+	1    3450 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2050 3850 1950
+Wire Wire Line
+	3850 1950 4100 1950
+Wire Wire Line
+	3450 2050 3450 1950
+Wire Wire Line
+	3450 1950 3850 1950
+Connection ~ 3850 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5D15188C
+P 3850 2350
+AR Path="/5DD4174A/5D15188C" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5D15188C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3850 2100 50  0001 C CNN
+F 1 "GND" H 3855 2177 50  0000 C CNN
+F 2 "" H 3850 2350 50  0001 C CNN
+F 3 "" H 3850 2350 50  0001 C CNN
+	1    3850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D152016
+P 3450 2350
+AR Path="/5DD4174A/5D152016" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5D152016" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3450 2100 50  0001 C CNN
+F 1 "GND" H 3455 2177 50  0000 C CNN
+F 2 "" H 3450 2350 50  0001 C CNN
+F 3 "" H 3450 2350 50  0001 C CNN
+	1    3450 2350
+	1    0    0    -1  
+$EndComp
+Text HLabel 8250 900  2    50   Input ~ 0
+V1M-37
+$Comp
+L Device:C C103
+U 1 1 5D16A202
+P 8050 1150
+F 0 "C103" H 8165 1196 50  0000 L CNN
+F 1 "1A4" H 8165 1105 50  0000 L CNN
+F 2 "" H 8088 1000 50  0001 C CNN
+F 3 "~" H 8050 1150 50  0001 C CNN
+	1    8050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D16AB1B
+P 8050 1300
+AR Path="/5DD4174A/5D16AB1B" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5D16AB1B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 1050 50  0001 C CNN
+F 1 "GND" H 8055 1127 50  0000 C CNN
+F 2 "" H 8050 1300 50  0001 C CNN
+F 3 "" H 8050 1300 50  0001 C CNN
+	1    8050 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 900  8050 900 
+Wire Wire Line
+	8050 900  8050 1000
+Text HLabel 8300 3900 2    50   Output ~ 0
+PMGR-45
+Text HLabel 8300 4050 2    50   Output ~ 0
+PMGR-55
+Text HLabel 8300 4200 2    50   Output ~ 0
+PMGR-56
+Connection ~ 7050 4050
+Connection ~ 7050 4200
+Wire Wire Line
+	7050 4050 7050 4200
+Connection ~ 6200 4350
+Wire Wire Line
+	6200 4350 6200 4850
+Wire Wire Line
+	6200 3600 6200 4350
+Wire Wire Line
+	7050 4200 7050 4350
+Wire Wire Line
+	7050 3900 7050 4050
+Wire Wire Line
+	7050 4350 8050 4350
+Wire Wire Line
+	8050 4350 8050 4200
+Wire Wire Line
+	8050 4200 8300 4200
+Connection ~ 7050 4350
+Wire Wire Line
+	8050 4200 8050 4050
+Wire Wire Line
+	8050 4050 8300 4050
+Connection ~ 8050 4200
+Wire Wire Line
+	8050 4050 8050 3900
+Wire Wire Line
+	8050 3900 8300 3900
+Connection ~ 8050 4050
 $EndSCHEMATC
