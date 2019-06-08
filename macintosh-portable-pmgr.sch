@@ -4,21 +4,21 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Date "2019-06-08"
+Rev "0.13"
+Comp "https://oldcrap.org"
+Comment1 "Author: Pawel Pieczul"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74xx:74LS244 U?
+L 74xx:74LS244 U2441
 U 1 1 5D18C1C5
 P 2400 2050
-F 0 "U?" H 2400 3031 50  0000 C CNN
+F 0 "U2441" H 2400 3031 50  0000 C CNN
 F 1 "74AC244" H 2400 2940 50  0000 C CNN
 F 2 "" H 2400 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 2400 2050 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 2400 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS244 U?
+L 74xx:74LS244 U2443
 U 1 1 5D18EE70
 P 7000 2050
-F 0 "U?" H 7000 3031 50  0000 C CNN
+F 0 "U2443" H 7000 3031 50  0000 C CNN
 F 1 "74AC244" H 7000 2940 50  0000 C CNN
 F 2 "" H 7000 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 7000 2050 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 7000 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS244 U?
+L 74xx:74LS244 U2444
 U 1 1 5D18F8CC
 P 9400 2050
-F 0 "U?" H 9400 3031 50  0000 C CNN
+F 0 "U2444" H 9400 3031 50  0000 C CNN
 F 1 "74AC244" H 9400 2940 50  0000 C CNN
 F 2 "" H 9400 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 9400 2050 50  0001 C CNN
@@ -48,18 +48,16 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 9400 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS244 U?
+L 74xx:74LS244 U2442
 U 1 1 5D1B6555
 P 4750 2050
-F 0 "U?" H 4750 3031 50  0000 C CNN
+F 0 "U2442" H 4750 3031 50  0000 C CNN
 F 1 "74AC244" H 4750 2940 50  0000 C CNN
 F 2 "" H 4750 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 4750 2050 50  0001 C CNN
 	1    4750 2050
 	1    0    0    -1  
 $EndComp
-Text HLabel 1100 1250 0    50   Input ~ 0
-RAM-TTL
 Wire Wire Line
 	1100 1250 2400 1250
 Wire Wire Line
@@ -124,14 +122,95 @@ Wire Wire Line
 Wire Wire Line
 	1900 2450 1900 2550
 $Comp
-L macintosh-portable:M50753 U?
+L macintosh-portable:M50753 PMGR
 U 1 1 5CF2D32E
 P 3550 5200
-F 0 "U?" H 3550 6731 50  0000 C CNN
-F 1 "M50753" H 3550 6640 50  0000 C CNN
+F 0 "PMGR" H 3550 5500 50  0000 C CNN
+F 1 "M50753" H 3550 5400 50  0000 C CNN
 F 2 "" H 3700 5150 50  0001 C CNN
 F 3 "" H 3700 5150 50  0001 C CNN
 	1    3550 5200
 	1    0    0    -1  
 $EndComp
+Text HLabel 5550 4550 2    50   Input ~ 0
+PMGR-P1-3
+Wire Wire Line
+	5050 4550 5550 4550
+Text HLabel 3550 3600 1    50   Output ~ 0
+PMGR-P0-7
+Wire Wire Line
+	3550 3600 3550 3850
+Text HLabel 2800 3600 1    50   Output ~ 0
+PMGR-P0-2
+Wire Wire Line
+	2800 3600 2800 3850
+Text HLabel 2800 7150 3    50   Input ~ 0
+PMGR-VCC
+$Comp
+L power:GND #PWR?
+U 1 1 5CFC9A73
+P 2650 6750
+F 0 "#PWR?" H 2650 6500 50  0001 C CNN
+F 1 "GND" H 2655 6577 50  0000 C CNN
+F 2 "" H 2650 6750 50  0001 C CNN
+F 3 "" H 2650 6750 50  0001 C CNN
+	1    2650 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6750 2650 6650
+Wire Wire Line
+	2500 6600 2500 6650
+Wire Wire Line
+	2500 6650 2650 6650
+Connection ~ 2650 6650
+Wire Wire Line
+	2650 6650 2650 6600
+$Comp
+L power:GND #PWR?
+U 1 1 5CFCB83B
+P 3000 6750
+F 0 "#PWR?" H 3000 6500 50  0001 C CNN
+F 1 "GND" H 3005 6577 50  0000 C CNN
+F 2 "" H 3000 6750 50  0001 C CNN
+F 3 "" H 3000 6750 50  0001 C CNN
+	1    3000 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6600 3000 6750
+Wire Wire Line
+	2800 6600 2800 7050
+Wire Wire Line
+	2800 7050 3150 7050
+Wire Wire Line
+	3150 7050 3150 6600
+Connection ~ 2800 7050
+Wire Wire Line
+	2800 7050 2800 7150
+Wire Wire Line
+	3150 7050 3300 7050
+Wire Wire Line
+	3300 7050 3300 6600
+Connection ~ 3150 7050
+Text HLabel 5550 5500 2    50   Input ~ 0
+PMGR-IN1
+Wire Wire Line
+	5550 5500 5050 5500
+Text HLabel 3400 3600 1    50   Output ~ 0
+PMGR-P0-6
+Wire Wire Line
+	3400 3600 3400 3850
+Text HLabel 10100 2250 2    50   Output ~ 0
+U2444-O3B
+Wire Wire Line
+	9900 2250 10100 2250
+Text HLabel 5550 4850 2    50   Input ~ 0
+PMGR-P1-5
+Wire Wire Line
+	5550 4850 5050 4850
+Wire Wire Line
+	1100 1250 1100 7050
+Wire Wire Line
+	1100 7050 2800 7050
 $EndSCHEMATC

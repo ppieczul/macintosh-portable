@@ -4,10 +4,10 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title "Macintosh Portable V1M Module"
-Date "2019-05-27"
-Rev "0.12"
+Date "2019-06-08"
+Rev "0.13"
 Comp "https://oldcrap.org"
 Comment1 "Author: Pawel Pieczul"
 Comment2 ""
@@ -748,7 +748,7 @@ Wire Wire Line
 Connection ~ 6600 4450
 Wire Wire Line
 	5950 5350 4250 5350
-Text HLabel 8450 4450 2    50   Output ~ 0
+Text HLabel 8450 4450 2    50   Input ~ 0
 V1M-19
 Wire Wire Line
 	6600 4450 8450 4450
@@ -1142,7 +1142,7 @@ Q1 drain\nenabled power charger\n(after resistors)
 Text Notes 8850 4750 0    50   ~ 0
 not connected
 Text Notes 8850 4500 0    50   ~ 0
-To PMGR-33
+From PMGR-P1-3
 Text Notes 8900 3350 0    50   ~ 0
 Q16 drain\nenabled RAM/TTL and\n2nd stage MOSFETs
 Text HLabel 1200 1300 2    50   Output ~ 0
@@ -1268,11 +1268,11 @@ Wire Wire Line
 Text Notes 850  950  0    50   ~ 0
 not connected
 Text Notes 650  4500 0    50   ~ 0
-From\nPMGR-38
-Text Notes 650  3700 0    50   ~ 0
-From\nPMGR-31
+From\nPMGR-P0-6
+Text Notes 600  3700 0    50   ~ 0
+From\nPMGR-P1-5
 Text Notes 550  4200 0    50   ~ 0
 not connected
 Text Notes 650  4750 0    50   ~ 0
-From\n74244 pin 3
+From\n74244 O3b
 $EndSCHEMATC

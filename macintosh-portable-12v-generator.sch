@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "Macintosh Portable 12V Generator Circuit"
-Date "2019-05-27"
-Rev "0.12"
+Date "2019-06-08"
+Rev "0.13"
 Comp "https://oldcrap.org"
 Comment1 "Author: Pawel Pieczul"
 Comment2 ""

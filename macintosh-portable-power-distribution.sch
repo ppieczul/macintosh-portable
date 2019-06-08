@@ -4,10 +4,10 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 5 5
 Title "Macintosh Portable Power Distribution"
-Date "2019-05-27"
-Rev "0.12"
+Date "2019-06-08"
+Rev "0.13"
 Comp "https://oldcrap.org"
 Comment1 "Author: Pawel Pieczul"
 Comment2 ""
@@ -112,8 +112,6 @@ Connection ~ 3200 5700
 Text HLabel 2400 5700 0    50   Input ~ 0
 V1M-51
 Wire Wire Line
-	2700 5700 2550 5700
-Wire Wire Line
 	3200 6000 3200 6050
 $Comp
 L power:GND #PWR?
@@ -168,7 +166,7 @@ $EndComp
 Wire Wire Line
 	2850 5100 2900 5100
 Text HLabel 2400 5100 0    50   Input ~ 0
-PMGR-42
+PMGR-P0-2
 Wire Wire Line
 	2400 5100 2550 5100
 Wire Wire Line
@@ -509,47 +507,12 @@ Wire Wire Line
 Text Notes 900  7450 0    50   ~ 0
 V1M - voltage control module, location 1-4M\nPMGR - power management chip, location H15
 Text HLabel 5450 6500 0    50   Input ~ 0
-PMGR-37
+PMGR-P0-7
 Wire Wire Line
 	5450 6500 5900 6500
 Wire Wire Line
 	5900 6500 5900 5950
 Connection ~ 5900 5950
-Text HLabel 2400 7050 0    50   Input ~ 0
-V1M-52
-$Comp
-L Device:CP1 C26
-U 1 1 5CEA6F81
-P 2550 6050
-F 0 "C26" H 2665 6096 50  0000 L CNN
-F 1 "47uF" H 2665 6005 50  0000 L CNN
-F 2 "" H 2550 6050 50  0001 C CNN
-F 3 "~" H 2550 6050 50  0001 C CNN
-	1    2550 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 5900 2550 5700
-Connection ~ 2550 5700
-Wire Wire Line
-	2550 5700 2400 5700
-$Comp
-L Device:CP1 C25
-U 1 1 5CEB228F
-P 2550 6750
-F 0 "C25" H 2435 6704 50  0000 R CNN
-F 1 "47uF" H 2435 6795 50  0000 R CNN
-F 2 "" H 2550 6750 50  0001 C CNN
-F 3 "~" H 2550 6750 50  0001 C CNN
-	1    2550 6750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2550 7050 2400 7050
-Wire Wire Line
-	2550 6900 2550 7050
-Wire Wire Line
-	2550 6600 2550 6200
 NoConn ~ 3950 5900
 NoConn ~ 4050 5900
 Text HLabel 7750 1950 2    50   Output ~ 0
@@ -651,65 +614,6 @@ Wire Wire Line
 	5600 3000 6200 3000
 Wire Wire Line
 	5600 1950 6000 1950
-$Comp
-L Device:R_US R?
-U 1 1 5DEE1891
-P 9500 900
-AR Path="/5DD4174A/5DEE1891" Ref="R?"  Part="1" 
-AR Path="/5CE45908/5DEE1891" Ref="R151"  Part="1" 
-F 0 "R151" V 9295 900 50  0000 C CNN
-F 1 "1k" V 9386 900 50  0000 C CNN
-F 2 "" V 9540 890 50  0001 C CNN
-F 3 "~" H 9500 900 50  0001 C CNN
-	1    9500 900 
-	0    1    1    0   
-$EndComp
-Text HLabel 9250 900  0    50   Input ~ 0
-V1M-62
-Wire Wire Line
-	9250 900  9350 900 
-$Comp
-L Device:C C?
-U 1 1 5DEE8ED4
-P 9750 1050
-AR Path="/5DD4174A/5DEE8ED4" Ref="C?"  Part="1" 
-AR Path="/5CE45908/5DEE8ED4" Ref="C107"  Part="1" 
-F 0 "C107" H 9865 1096 50  0000 L CNN
-F 1 "1A4" H 9865 1005 50  0000 L CNN
-F 2 "" H 9788 900 50  0001 C CNN
-F 3 "~" H 9750 1050 50  0001 C CNN
-	1    9750 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DEE97A8
-P 9750 1200
-AR Path="/5DD4174A/5DEE97A8" Ref="#PWR?"  Part="1" 
-AR Path="/5CE45908/5DEE97A8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9750 950 50  0001 C CNN
-F 1 "GND" H 9755 1027 50  0000 C CNN
-F 2 "" H 9750 1200 50  0001 C CNN
-F 3 "" H 9750 1200 50  0001 C CNN
-	1    9750 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 900  9750 900 
-Text HLabel 10500 900  2    50   Output ~ 0
-J21-31
-Wire Wire Line
-	9750 900  10200 900 
-Connection ~ 9750 900 
-Text HLabel 10500 1150 2    50   Output ~ 0
-PMGR-52
-Wire Wire Line
-	10200 900  10200 1150
-Wire Wire Line
-	10200 1150 10500 1150
-Connection ~ 10200 900 
-Wire Wire Line
-	10200 900  10500 900 
 Text HLabel 9600 3550 0    50   Input ~ 0
 V1M-33
 Text HLabel 10700 3550 2    50   Output ~ 0
@@ -821,8 +725,8 @@ Wire Notes Line
 	1850 2900 1850 4450
 Wire Notes Line
 	1850 4450 6750 4450
-Text Notes 7000 4550 0    50   ~ 0
-To RAM, RAM slot\nand logic chips
+Text Notes 7150 4600 0    50   ~ 0
+Enable power to\nRAM, RAM slot, \nlogic chips and PMGR
 Wire Wire Line
 	7250 3900 7050 3900
 Text HLabel 7250 3900 2    50   Output ~ 0
@@ -861,124 +765,8 @@ Wire Wire Line
 	3000 3650 3150 3650
 Text HLabel 3000 3650 0    50   Input ~ 0
 V1M-41
-Wire Wire Line
-	10100 2250 10500 2250
-Wire Wire Line
-	10100 2150 10100 2250
-Wire Wire Line
-	10100 1700 10500 1700
-Wire Wire Line
-	10100 1850 10100 1700
-$Comp
-L Device:CP1 C18
-U 1 1 5CF544A6
-P 10100 2000
-F 0 "C18" H 10215 2046 50  0000 L CNN
-F 1 "100uF" H 10215 1955 50  0000 L CNN
-F 2 "" H 10100 2000 50  0001 C CNN
-F 3 "~" H 10100 2000 50  0001 C CNN
-	1    10100 2000
-	1    0    0    -1  
-$EndComp
-Text HLabel 10500 2250 2    50   Output ~ 0
-V1M-31
-Text HLabel 10500 1700 2    50   Output ~ 0
-V1M-29
-$Comp
-L Device:R_US R147
-U 1 1 5D12FA45
-P 3850 2200
-F 0 "R147" V 3645 2200 50  0000 C CNN
-F 1 "100k" V 3736 2200 50  0000 C CNN
-F 2 "" V 3890 2190 50  0001 C CNN
-F 3 "~" H 3850 2200 50  0001 C CNN
-	1    3850 2200
-	-1   0    0    1   
-$EndComp
-Text HLabel 4100 1950 2    50   Output ~ 0
-V1M-40
-$Comp
-L Device:C C102
-U 1 1 5D1473B8
-P 3450 2200
-F 0 "C102" H 3565 2246 50  0000 L CNN
-F 1 "1A4" H 3565 2155 50  0000 L CNN
-F 2 "" H 3488 2050 50  0001 C CNN
-F 3 "~" H 3450 2200 50  0001 C CNN
-	1    3450 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 2050 3850 1950
-Wire Wire Line
-	3850 1950 4100 1950
-Wire Wire Line
-	3450 2050 3450 1950
-Wire Wire Line
-	3450 1950 3850 1950
-Connection ~ 3850 1950
-$Comp
-L power:GND #PWR?
-U 1 1 5D15188C
-P 3850 2350
-AR Path="/5DD4174A/5D15188C" Ref="#PWR?"  Part="1" 
-AR Path="/5CE45908/5D15188C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3850 2100 50  0001 C CNN
-F 1 "GND" H 3855 2177 50  0000 C CNN
-F 2 "" H 3850 2350 50  0001 C CNN
-F 3 "" H 3850 2350 50  0001 C CNN
-	1    3850 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D152016
-P 3450 2350
-AR Path="/5DD4174A/5D152016" Ref="#PWR?"  Part="1" 
-AR Path="/5CE45908/5D152016" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3450 2100 50  0001 C CNN
-F 1 "GND" H 3455 2177 50  0000 C CNN
-F 2 "" H 3450 2350 50  0001 C CNN
-F 3 "" H 3450 2350 50  0001 C CNN
-	1    3450 2350
-	1    0    0    -1  
-$EndComp
-Text HLabel 8250 900  2    50   Input ~ 0
-V1M-37
-$Comp
-L Device:C C103
-U 1 1 5D16A202
-P 8050 1150
-F 0 "C103" H 8165 1196 50  0000 L CNN
-F 1 "1A4" H 8165 1105 50  0000 L CNN
-F 2 "" H 8088 1000 50  0001 C CNN
-F 3 "~" H 8050 1150 50  0001 C CNN
-	1    8050 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D16AB1B
-P 8050 1300
-AR Path="/5DD4174A/5D16AB1B" Ref="#PWR?"  Part="1" 
-AR Path="/5CE45908/5D16AB1B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8050 1050 50  0001 C CNN
-F 1 "GND" H 8055 1127 50  0000 C CNN
-F 2 "" H 8050 1300 50  0001 C CNN
-F 3 "" H 8050 1300 50  0001 C CNN
-	1    8050 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 900  8050 900 
-Wire Wire Line
-	8050 900  8050 1000
-Text HLabel 8300 3900 2    50   Output ~ 0
-PMGR-45
-Text HLabel 8300 4050 2    50   Output ~ 0
-PMGR-55
-Text HLabel 8300 4200 2    50   Output ~ 0
-PMGR-56
+Text HLabel 8250 4350 2    50   Output ~ 0
+PMGR-VCC
 Connection ~ 7050 4050
 Connection ~ 7050 4200
 Wire Wire Line
@@ -992,21 +780,44 @@ Wire Wire Line
 	7050 4200 7050 4350
 Wire Wire Line
 	7050 3900 7050 4050
-Wire Wire Line
-	7050 4350 8050 4350
-Wire Wire Line
-	8050 4350 8050 4200
-Wire Wire Line
-	8050 4200 8300 4200
 Connection ~ 7050 4350
 Wire Wire Line
-	8050 4200 8050 4050
+	7050 4350 8250 4350
 Wire Wire Line
-	8050 4050 8300 4050
-Connection ~ 8050 4200
+	2550 6600 2550 6200
 Wire Wire Line
-	8050 4050 8050 3900
+	2550 5700 2400 5700
 Wire Wire Line
-	8050 3900 8300 3900
-Connection ~ 8050 4050
+	2700 5700 2550 5700
+Connection ~ 2550 5700
+Wire Wire Line
+	2550 5900 2550 5700
+$Comp
+L Device:CP1 C26
+U 1 1 5CEA6F81
+P 2550 6050
+F 0 "C26" H 2665 6096 50  0000 L CNN
+F 1 "47uF" H 2665 6005 50  0000 L CNN
+F 2 "" H 2550 6050 50  0001 C CNN
+F 3 "~" H 2550 6050 50  0001 C CNN
+	1    2550 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6900 2550 7050
+Wire Wire Line
+	2550 7050 2400 7050
+$Comp
+L Device:CP1 C25
+U 1 1 5CEB228F
+P 2550 6750
+F 0 "C25" H 2435 6704 50  0000 R CNN
+F 1 "47uF" H 2435 6795 50  0000 R CNN
+F 2 "" H 2550 6750 50  0001 C CNN
+F 3 "~" H 2550 6750 50  0001 C CNN
+	1    2550 6750
+	-1   0    0    1   
+$EndComp
+Text HLabel 2400 7050 0    50   Input ~ 0
+V1M-52
 $EndSCHEMATC
