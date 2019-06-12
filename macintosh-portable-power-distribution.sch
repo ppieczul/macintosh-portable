@@ -4,10 +4,10 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title "Macintosh Portable Power Distribution"
 Date "2019-06-08"
-Rev "0.13"
+Rev "0.14"
 Comp "https://oldcrap.org"
 Comment1 "Author: Pawel Pieczul"
 Comment2 ""
@@ -299,7 +299,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 5150 6900 5950
 Text HLabel 7300 5450 2    50   Output ~ 0
-CPU-ROM
+CPU-ROM-VCC
 Text Notes 7250 5700 0    50   ~ 0
 To CPU, ROMs\nand ROM slot
 Wire Wire Line
@@ -442,7 +442,7 @@ Wire Wire Line
 	4700 3950 4850 3950
 Wire Wire Line
 	4700 3600 4700 3950
-Text HLabel 6050 1100 2    50   Output ~ 0
+Text HLabel 9400 1100 2    50   Output ~ 0
 V1M-17
 $Comp
 L power:+7.5V #PWR?
@@ -458,7 +458,7 @@ $EndComp
 Wire Wire Line
 	5600 950  5600 1100
 Wire Wire Line
-	6050 1100 5600 1100
+	9400 1100 8700 1100
 Connection ~ 5600 1100
 Wire Wire Line
 	5600 1100 5600 1250
@@ -515,40 +515,73 @@ Wire Wire Line
 Connection ~ 5900 5950
 NoConn ~ 3950 5900
 NoConn ~ 4050 5900
-Text HLabel 7750 1950 2    50   Output ~ 0
+Text HLabel 8550 1950 2    50   Output ~ 0
 V1M-16
 $Comp
 L Device:C C?
 U 1 1 5DD477AE
-P 7250 2100
+P 8050 2100
 AR Path="/5DD4174A/5DD477AE" Ref="C?"  Part="1" 
 AR Path="/5CE45908/5DD477AE" Ref="C108"  Part="1" 
-F 0 "C108" H 7365 2146 50  0000 L CNN
+F 0 "C108" H 8165 2146 50  0000 L CNN
+F 1 "1A5" H 8165 2055 50  0000 L CNN
+F 2 "" H 8088 1950 50  0001 C CNN
+F 3 "~" H 8050 2100 50  0001 C CNN
+	1    8050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DD477B4
+P 7650 1950
+AR Path="/5DD4174A/5DD477B4" Ref="R?"  Part="1" 
+AR Path="/5CE45908/5DD477B4" Ref="R158"  Part="1" 
+F 0 "R158" V 7445 1950 50  0000 C CNN
+F 1 "2.2k" V 7536 1950 50  0000 C CNN
+F 2 "" V 7690 1940 50  0001 C CNN
+F 3 "~" H 7650 1950 50  0001 C CNN
+	1    7650 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD477BA
+P 8050 2250
+AR Path="/5DD4174A/5DD477BA" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5DD477BA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 2000 50  0001 C CNN
+F 1 "GND" H 8055 2077 50  0000 C CNN
+F 2 "" H 8050 2250 50  0001 C CNN
+F 3 "" H 8050 2250 50  0001 C CNN
+	1    8050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1950 8050 1950
+Wire Wire Line
+	8050 1950 8550 1950
+Connection ~ 8050 1950
+$Comp
+L Device:C C?
+U 1 1 5DD477C3
+P 7250 2100
+AR Path="/5DD4174A/5DD477C3" Ref="C?"  Part="1" 
+AR Path="/5CE45908/5DD477C3" Ref="C109"  Part="1" 
+F 0 "C109" H 7365 2146 50  0000 L CNN
 F 1 "1A5" H 7365 2055 50  0000 L CNN
 F 2 "" H 7288 1950 50  0001 C CNN
 F 3 "~" H 7250 2100 50  0001 C CNN
 	1    7250 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R?
-U 1 1 5DD477B4
-P 6850 1950
-AR Path="/5DD4174A/5DD477B4" Ref="R?"  Part="1" 
-AR Path="/5CE45908/5DD477B4" Ref="R158"  Part="1" 
-F 0 "R158" V 6645 1950 50  0000 C CNN
-F 1 "2.2k" V 6736 1950 50  0000 C CNN
-F 2 "" V 6890 1940 50  0001 C CNN
-F 3 "~" H 6850 1950 50  0001 C CNN
-	1    6850 1950
-	0    1    1    0   
-$EndComp
+Wire Wire Line
+	7250 1950 7500 1950
 $Comp
 L power:GND #PWR?
-U 1 1 5DD477BA
+U 1 1 5DD477CA
 P 7250 2250
-AR Path="/5DD4174A/5DD477BA" Ref="#PWR?"  Part="1" 
-AR Path="/5CE45908/5DD477BA" Ref="#PWR?"  Part="1" 
+AR Path="/5DD4174A/5DD477CA" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5DD477CA" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7250 2000 50  0001 C CNN
 F 1 "GND" H 7255 2077 50  0000 C CNN
 F 2 "" H 7250 2250 50  0001 C CNN
@@ -556,55 +589,22 @@ F 3 "" H 7250 2250 50  0001 C CNN
 	1    7250 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 1950 7250 1950
-Wire Wire Line
-	7250 1950 7750 1950
-Connection ~ 7250 1950
-$Comp
-L Device:C C?
-U 1 1 5DD477C3
-P 6450 2100
-AR Path="/5DD4174A/5DD477C3" Ref="C?"  Part="1" 
-AR Path="/5CE45908/5DD477C3" Ref="C109"  Part="1" 
-F 0 "C109" H 6565 2146 50  0000 L CNN
-F 1 "1A5" H 6565 2055 50  0000 L CNN
-F 2 "" H 6488 1950 50  0001 C CNN
-F 3 "~" H 6450 2100 50  0001 C CNN
-	1    6450 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 1950 6700 1950
-$Comp
-L power:GND #PWR?
-U 1 1 5DD477CA
-P 6450 2250
-AR Path="/5DD4174A/5DD477CA" Ref="#PWR?"  Part="1" 
-AR Path="/5CE45908/5DD477CA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6450 2000 50  0001 C CNN
-F 1 "GND" H 6455 2077 50  0000 C CNN
-F 2 "" H 6450 2250 50  0001 C CNN
-F 3 "" H 6450 2250 50  0001 C CNN
-	1    6450 2250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_US R?
 U 1 1 5DD513F0
-P 6150 1950
+P 6950 1950
 AR Path="/5DD4174A/5DD513F0" Ref="R?"  Part="1" 
 AR Path="/5CE45908/5DD513F0" Ref="R159"  Part="1" 
-F 0 "R159" V 5945 1950 50  0000 C CNN
-F 1 "2.2k" V 6036 1950 50  0000 C CNN
-F 2 "" V 6190 1940 50  0001 C CNN
-F 3 "~" H 6150 1950 50  0001 C CNN
-	1    6150 1950
+F 0 "R159" V 6745 1950 50  0000 C CNN
+F 1 "2.2k" V 6836 1950 50  0000 C CNN
+F 2 "" V 6990 1940 50  0001 C CNN
+F 3 "~" H 6950 1950 50  0001 C CNN
+	1    6950 1950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6300 1950 6450 1950
-Connection ~ 6450 1950
+	7100 1950 7250 1950
+Connection ~ 7250 1950
 Wire Wire Line
 	5600 1950 5600 3000
 Wire Wire Line
@@ -612,8 +612,6 @@ Wire Wire Line
 Connection ~ 5600 3000
 Wire Wire Line
 	5600 3000 6200 3000
-Wire Wire Line
-	5600 1950 6000 1950
 Text HLabel 9600 3550 0    50   Input ~ 0
 V1M-33
 Text HLabel 10700 3550 2    50   Output ~ 0
@@ -820,4 +818,58 @@ F 3 "~" H 2550 6750 50  0001 C CNN
 $EndComp
 Text HLabel 2400 7050 0    50   Input ~ 0
 V1M-52
+$Comp
+L Device:CP1 C27
+U 1 1 5CFFB966
+P 8700 1400
+F 0 "C27" H 8815 1446 50  0000 L CNN
+F 1 "47uF" H 8815 1355 50  0000 L CNN
+F 2 "" H 8700 1400 50  0001 C CNN
+F 3 "~" H 8700 1400 50  0001 C CNN
+	1    8700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CFFC637
+P 8700 1550
+AR Path="/5DD4174A/5CFFC637" Ref="#PWR?"  Part="1" 
+AR Path="/5CE45908/5CFFC637" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8700 1300 50  0001 C CNN
+F 1 "GND" H 8705 1377 50  0000 C CNN
+F 2 "" H 8700 1550 50  0001 C CNN
+F 3 "" H 8700 1550 50  0001 C CNN
+	1    8700 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1250 8700 1100
+Connection ~ 8700 1100
+Wire Wire Line
+	8700 1100 6200 1100
+Wire Wire Line
+	5600 1950 6200 1950
+$Comp
+L Device:R_US R?
+U 1 1 5D019298
+P 6200 1500
+AR Path="/5DD4174A/5D019298" Ref="R?"  Part="1" 
+AR Path="/5CE45908/5D019298" Ref="R10"  Part="1" 
+F 0 "R10" V 5995 1500 50  0000 C CNN
+F 1 "100" V 6086 1500 50  0000 C CNN
+F 2 "" V 6240 1490 50  0001 C CNN
+F 3 "~" H 6200 1500 50  0001 C CNN
+	1    6200 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 1350 6200 1100
+Connection ~ 6200 1100
+Wire Wire Line
+	6200 1100 5600 1100
+Wire Wire Line
+	6200 1650 6200 1950
+Connection ~ 6200 1950
+Wire Wire Line
+	6200 1950 6800 1950
 $EndSCHEMATC

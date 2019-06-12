@@ -20,3 +20,17 @@ This is [Mitsubishi M50753](http://www.bitsavers.org/components/mitsubishi/_data
 
 ![M50753-pinout](pictures/macintosh-portable-PMGR-M50753-pinout.png)
 ![M50753-pins](pictures/macintosh-portable-PMGR-M50753-pin-description.png)
+
+## Apple Sander-Wozniak Integrated Machine (SWIM)
+
+This is a floppy controller chip, full chip spec is [here](http://dec8.info/Apple/Apple%20Floppy%20Notes/SWIM%20Chip%20User's%20Ref.pdf). Pin 0 is in the top row of the chip, considering how the text is printed on it.
+
+![SWIM-pinout](pictures/macintosh-portable-SWIM-pinout.png)
+![SWIM-pins](pictures/macintosh-portable-SWIM-pin-description.png)
+
+## Versatile Interface Adapter (VIA)
+
+This is G65SC22PE-2, full chip spec is [here](http://datasheet.elcodis.com/pdf2/74/25/742581/g65sc22p-3.pdf).
+
+![VIA-pinout](pictures/macintosh-portable-via-pinout.png)
+![VIA-pins](pictures/macintosh-portable-via-pin-description.png)

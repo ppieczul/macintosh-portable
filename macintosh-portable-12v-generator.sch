@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 3 5
 Title "Macintosh Portable 12V Generator Circuit"
 Date "2019-06-08"
-Rev "0.13"
+Rev "0.14"
 Comp "https://oldcrap.org"
 Comment1 "Author: Pawel Pieczul"
 Comment2 ""

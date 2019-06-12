@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 3 5
 Title "Macintosh Portable V1M Module"
 Date "2019-06-08"
-Rev "0.13"
+Rev "0.14"
 Comp "https://oldcrap.org"
 Comment1 "Author: Pawel Pieczul"
 Comment2 ""
@@ -1217,7 +1217,7 @@ Q1 drain\nenabled power charger\nor battery available
 Text Notes 8850 4250 0    50   ~ 0
 same as V1M-11
 Text Notes 8900 1200 0    50   ~ 0
-to PMGR-52\n(through resistor)
+to PMGR-IN-1\n(through resistor)
 Text Notes 8900 2050 0    50   ~ 0
 not connected
 Text Notes 10200 5400 0    50   ~ 0
