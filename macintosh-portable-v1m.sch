@@ -4,10 +4,10 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title "Macintosh Portable V1M Module"
-Date "2019-06-08"
-Rev "0.14"
+Date "2019-06-16"
+Rev "0.15"
 Comp "https://oldcrap.org"
 Comment1 "Author: Pawel Pieczul"
 Comment2 ""
