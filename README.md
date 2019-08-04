@@ -1,5 +1,12 @@
 # macintosh-portable
 
+## Attention!
+
+The original Macintosh Portable have finally surfaced. They can be found here:
+
+  * [nicpunt github](https://github.com/nickpunt/nubus-se30/tree/master/Schematics/apple)
+  * [archive.org](https://archive.org/details/Macintosh68kSchematics)
+
 ## Introduction
 
 This is an attempt to reverse-engineer **Macintosh Portable** motherboard's power distribution and management subsystem.
